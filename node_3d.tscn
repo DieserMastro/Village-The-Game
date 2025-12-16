@@ -1,3 +1,99 @@
-[gd_scene format=3 uid="uid://cvu5heb6bvywx"]
+[gd_scene load_steps=7 format=3 uid="uid://cvu5heb6bvywx"]
 
-[node name="Node3D" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://c50l12pm10xm4" path="res://Assets/Medieval buildings/glTF/Corner_Interior_Big.gltf" id="1_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://mskq02syqbts" path="res://Assets/Medieval buildings/glTF/Wall_Plaster_Straight_Base.gltf" id="2_jka67"]
+[ext_resource type="PackedScene" uid="uid://bjgcoitwihxeq" path="res://Assets/Medieval buildings/glTF/DoorFrame_Round_WoodDark.gltf" id="3_i5arm"]
+[ext_resource type="PackedScene" uid="uid://ccvn62wrpttv2" path="res://Assets/Medieval buildings/glTF/Wall_Plaster_Door_Round.gltf" id="4_wc5p8"]
+[ext_resource type="PackedScene" uid="uid://prh35jb6tjtd" path="res://Assets/Sofia/sophia_skin/sophia_skin.tscn" id="5_jka67"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jsk3o"]
+
+[node name="Test_World" type="Node3D"]
+
+[node name="World_Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(84.5455, 0, 0, 0, 1, 0, 0, 0, 42.006577, 0, 0, 0)
+mesh = SubResource("BoxMesh_jsk3o")
+
+[node name="House" type="Node3D" parent="."]
+
+[node name="Corners" type="Node3D" parent="House"]
+
+[node name="Corner_Interior_Big2" parent="House/Corners" instance=ExtResource("1_r3fl7")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7, 0.4, 6.8)
+
+[node name="Corner_Interior_Big3" parent="House/Corners" instance=ExtResource("1_r3fl7")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.000001, 0.4, 6.7999997)
+
+[node name="Corner_Interior_Big4" parent="House/Corners" instance=ExtResource("1_r3fl7")]
+transform = Transform3D(5.8612546e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 5.8612546e-08, -2.9999995, 0.4, -1.2000002)
+
+[node name="Corner_Interior_Big5" parent="House/Corners" instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.4, -1.2000003)
+
+[node name="Hind_Wall" type="Node3D" parent="House"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+
+[node name="Wall_Plaster_Straight_Base2" parent="House/Hind_Wall" instance=ExtResource("2_jka67")]
+
+[node name="Wall_Plaster_Straight_Base6" parent="House/Hind_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base3" parent="House/Hind_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base4" parent="House/Hind_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base5" parent="House/Hind_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Side_Wall" type="Node3D" parent="House"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.2000008, 0, -0.20000029)
+
+[node name="Wall_Plaster_Straight_Base2" parent="House/Side_Wall" instance=ExtResource("2_jka67")]
+
+[node name="Wall_Plaster_Straight_Base3" parent="House/Side_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base4" parent="House/Side_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base5" parent="House/Side_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Front_Wall" type="Node3D" parent="House"]
+transform = Transform3D(-0.99999994, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, -0.99999994, 6, 0, -1.3999999)
+
+[node name="Wall_Plaster_Straight_Base2" parent="House/Front_Wall" instance=ExtResource("2_jka67")]
+
+[node name="Wall_Plaster_Straight_Base3" parent="House/Front_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base5" parent="House/Front_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base6" parent="House/Front_Wall" instance=ExtResource("2_jka67")]
+transform = Transform3D(0.9999999, 0, 8.881784e-16, 0, 1, 0, -8.881784e-16, 0, 0.9999999, 7.999999, 0, 0)
+
+[node name="DoorFrame_Round_WoodDark2" parent="House/Front_Wall" instance=ExtResource("3_i5arm")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 4, 0, -1.1920929e-07)
+
+[node name="Wall_Plaster_Door_Round2" parent="House/Front_Wall" instance=ExtResource("4_wc5p8")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 4, 0, -1.1920929e-07)
+
+[node name="Side_Wall2" type="Node3D" parent="House"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.2, 0, 5.8)
+
+[node name="Wall_Plaster_Straight_Base2" parent="House/Side_Wall2" instance=ExtResource("2_jka67")]
+
+[node name="Wall_Plaster_Straight_Base3" parent="House/Side_Wall2" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base4" parent="House/Side_Wall2" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_Plaster_Straight_Base5" parent="House/Side_Wall2" instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="SophiaSkin" parent="." instance=ExtResource("5_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -7.8)
