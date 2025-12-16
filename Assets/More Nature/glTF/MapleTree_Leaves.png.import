@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvtx57gi4qrpx"
-path.s3tc="res://.godot/imported/Flowers.png-b3a2a258e84841f1a678c310ae1d4e02.s3tc.ctex"
+uid="uid://c8nnmnkdeujc"
+path.s3tc="res://.godot/imported/MapleTree_Leaves.png-d4a045b4162c723d402a677a2d6011fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/More Nature/glTF/Flowers.png"
-dest_files=["res://.godot/imported/Flowers.png-b3a2a258e84841f1a678c310ae1d4e02.s3tc.ctex"]
+source_file="res://Assets/More Nature/glTF/MapleTree_Leaves.png"
+dest_files=["res://.godot/imported/MapleTree_Leaves.png-d4a045b4162c723d402a677a2d6011fa.s3tc.ctex"]
 
 [params]
 
