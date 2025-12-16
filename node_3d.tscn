@@ -1,3 +1,72 @@
-[gd_scene format=3 uid="uid://cvu5heb6bvywx"]
+[gd_scene load_steps=2 format=3 uid="uid://cvu5heb6bvywx"]
 
-[node name="Node3D" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://m7wknn55jhig" path="res://Assets/Medieval buildings/glTF/Wall_UnevenBrick_Straight.gltf" id="1_a202f"]
+
+[node name="gebeude_1" type="Node3D"]
+
+[node name="Wand_1_Stein" type="Node3D" parent="."]
+
+[node name="Wall_UnevenBrick_Straight2" parent="Wand_1_Stein" instance=ExtResource("1_a202f")]
+
+[node name="Wall_UnevenBrick_Straight3" parent="Wand_1_Stein" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight4" parent="Wand_1_Stein" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight5" parent="Wand_1_Stein" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight6" parent="Wand_1_Stein" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Wand_1_Stein2" type="Node3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 0, -9)
+
+[node name="Wall_UnevenBrick_Straight2" parent="Wand_1_Stein2" instance=ExtResource("1_a202f")]
+
+[node name="Wall_UnevenBrick_Straight3" parent="Wand_1_Stein2" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight4" parent="Wand_1_Stein2" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight5" parent="Wand_1_Stein2" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight6" parent="Wand_1_Stein2" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Wand_1_Stein3" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8, 0, -10)
+
+[node name="Wall_UnevenBrick_Straight2" parent="Wand_1_Stein3" instance=ExtResource("1_a202f")]
+
+[node name="Wall_UnevenBrick_Straight3" parent="Wand_1_Stein3" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight4" parent="Wand_1_Stein3" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight5" parent="Wand_1_Stein3" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight6" parent="Wand_1_Stein3" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Wand_1_Stein4" type="Node3D" parent="."]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 9, 0, -1)
+
+[node name="Wall_UnevenBrick_Straight2" parent="Wand_1_Stein4" instance=ExtResource("1_a202f")]
+
+[node name="Wall_UnevenBrick_Straight3" parent="Wand_1_Stein4" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight4" parent="Wand_1_Stein4" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight5" parent="Wand_1_Stein4" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_UnevenBrick_Straight6" parent="Wand_1_Stein4" instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
