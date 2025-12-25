@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://besjiqf4252ev"]
+[gd_scene load_steps=5 format=3 uid="uid://besjiqf4252ev"]
 
 [ext_resource type="PackedScene" uid="uid://m7wknn55jhig" path="res://Assets/Medieval buildings/glTF/Wall_UnevenBrick_Straight.gltf" id="1_lis1c"]
+[ext_resource type="PackedScene" uid="uid://dyp1r23xtt1ib" path="res://Assets/Medieval buildings/glTF/DoorFrame_Flat_WoodDark.gltf" id="2_rxpx1"]
+[ext_resource type="PackedScene" uid="uid://bvule2ct6nma0" path="res://Assets/Medieval buildings/glTF/Door_4_Flat.gltf" id="3_bt00t"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ern3b"]
 size = Vector3(10, 4.9, 0.5)
@@ -14,8 +16,11 @@ size = Vector3(10, 4.9, 0.5)
 [node name="Wall_UnevenBrick_Straight3" parent="Wand_1_Stein" instance=ExtResource("1_lis1c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Wall_UnevenBrick_Straight4" parent="Wand_1_Stein" instance=ExtResource("1_lis1c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+[node name="DoorFrame_Flat_WoodDark2" parent="Wand_1_Stein" instance=ExtResource("2_rxpx1")]
+transform = Transform3D(1.58948, 0, 0, 0, 1.3653234, 0, 0, 0, 1, 3.8999999, 0.013409711, 0)
+
+[node name="Door_4_Flat2" parent="Wand_1_Stein" instance=ExtResource("3_bt00t")]
+transform = Transform3D(1.6417274, 0, 0, 0, 1.4, 0, 0, 0, 1, 3.071637, 0, -0.1)
 
 [node name="Wall_UnevenBrick_Straight5" parent="Wand_1_Stein" instance=ExtResource("1_lis1c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
