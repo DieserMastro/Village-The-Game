@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cvu5heb6bvywx"]
+[gd_scene load_steps=8 format=3 uid="uid://cvu5heb6bvywx"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_noarx"]
 [ext_resource type="PackedScene" uid="uid://besjiqf4252ev" path="res://scenes/1_stock_mit_collison.tscn" id="2_noarx"]
 [ext_resource type="PackedScene" uid="uid://drspg6clip85y" path="res://scenes/2_stock.tscn" id="3_jka67"]
-[ext_resource type="PackedScene" uid="uid://djwjb8m3u21gh" path="res://Assets/Medieval buildings/glTF/Corner_Exterior_Wood.gltf" id="4_i5arm"]
-[ext_resource type="PackedScene" uid="uid://wmh8fj2ru4v7" path="res://Assets/Medieval buildings/glTF/Corner_ExteriorWide_Wood.gltf" id="5_wc5p8"]
+[ext_resource type="PackedScene" uid="uid://bcbkrte5400m6" path="res://scenes/exterior_wood_ecken.tscn" id="4_r3fl7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -25,7 +24,7 @@ glow_enabled = true
 environment = SubResource("Environment_a0tk4")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.6123724, 0.04736708, 0.78914917, 0.6123724, 0.65973955, 0.43559578, -0.50000006, 0.75, -0.43301266, -4, 9, -7)
+transform = Transform3D(0.38606668, -0.73038054, 0.5634686, 0.61237234, 0.6597396, 0.43559578, -0.6898932, 0.17688364, 0.7019683, 3.9, 15.799999, -10.2)
 shadow_enabled = true
 
 [node name="ProtoController" parent="." instance=ExtResource("1_noarx")]
@@ -44,34 +43,5 @@ size = Vector3(35.600002, 1, 36)
 [node name="2_Stock" parent="CSGCombiner3D" instance=ExtResource("3_jka67")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0000005, 3.1000001, 0)
 
-[node name="Exterior_Wood" type="Node3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-
-[node name="Corner_Exterior_Wood3" parent="CSGCombiner3D/Exterior_Wood" instance=ExtResource("4_i5arm")]
-transform = Transform3D(1, 0, 0, 0, 2.1, 0, 0, 0, 1, 0, 3.0000002, 0)
-
-[node name="Corner_ExteriorWide_Wood2" parent="CSGCombiner3D/Exterior_Wood" instance=ExtResource("5_wc5p8")]
-
-[node name="Exterior_Wood2" type="Node3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -9.900001)
-
-[node name="Corner_Exterior_Wood3" parent="CSGCombiner3D/Exterior_Wood2" instance=ExtResource("4_i5arm")]
-transform = Transform3D(1, 0, 0, 0, 2.1, 0, 0, 0, 1, 0, 3.0000002, 0)
-
-[node name="Corner_ExteriorWide_Wood2" parent="CSGCombiner3D/Exterior_Wood2" instance=ExtResource("5_wc5p8")]
-
-[node name="Exterior_Wood3" type="Node3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.900001, 0, -9.900001)
-
-[node name="Corner_Exterior_Wood3" parent="CSGCombiner3D/Exterior_Wood3" instance=ExtResource("4_i5arm")]
-transform = Transform3D(1, 0, 0, 0, 2.1, 0, 0, 0, 1, 0, 3.0000002, 0)
-
-[node name="Corner_ExteriorWide_Wood2" parent="CSGCombiner3D/Exterior_Wood3" instance=ExtResource("5_wc5p8")]
-
-[node name="Exterior_Wood4" type="Node3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.900001, 0, -0.1)
-
-[node name="Corner_Exterior_Wood3" parent="CSGCombiner3D/Exterior_Wood4" instance=ExtResource("4_i5arm")]
-transform = Transform3D(1, 0, 0, 0, 2.1, 0, 0, 0, 1, 0, 3.0000002, 0)
-
-[node name="Corner_ExteriorWide_Wood2" parent="CSGCombiner3D/Exterior_Wood4" instance=ExtResource("5_wc5p8")]
+[node name="Exterior_Wood_Ecken" parent="CSGCombiner3D" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0, 0)
