@@ -1,15 +1,17 @@
-[gd_scene load_steps=17 format=3 uid="uid://cdxuvsos0y4gn"]
+[gd_scene load_steps=19 format=3 uid="uid://cdxuvsos0y4gn"]
 
 [ext_resource type="PackedScene" uid="uid://c6v50haab2yl4" path="res://Assets/Imports/Medieval buildings/glTF/Stairs_Exterior_Platform45Clean.gltf" id="1_e07hb"]
 [ext_resource type="PackedScene" uid="uid://ccns62iaxt2et" path="res://Assets/Imports/Medieval buildings/glTF/Stairs_Exterior_Straight_L.gltf" id="1_o0eve"]
 [ext_resource type="PackedScene" uid="uid://cw4qdbry8505d" path="res://Assets/Imports/Medieval buildings/glTF/Stairs_Exterior_Straight_R.gltf" id="3_3t7kh"]
 [ext_resource type="PackedScene" uid="uid://djwjb8m3u21gh" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Exterior_Wood.gltf" id="4_5wwc3"]
+[ext_resource type="PackedScene" uid="uid://csvmnxic7b53r" path="res://Assets/Imports/Medieval buildings/glTF/Stairs_Exterior_SingleSide.gltf" id="4_nj2gr"]
 [ext_resource type="PackedScene" uid="uid://bjgcoitwihxeq" path="res://Assets/Imports/Medieval buildings/glTF/DoorFrame_Round_WoodDark.gltf" id="5_nj2gr"]
 [ext_resource type="PackedScene" uid="uid://i1yhstjtu3m8" path="res://Assets/Scenes/Assets with Collision/Door/door.tscn" id="7_rgo12"]
 [ext_resource type="PackedScene" uid="uid://yplbsremwc86" path="res://Assets/Imports/Medieval buildings/glTF/Floor_WoodDark.gltf" id="8_wgnw2"]
 [ext_resource type="PackedScene" uid="uid://c0gt33vqxf4wq" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Straight_R.gltf" id="9_4udeh"]
 [ext_resource type="PackedScene" uid="uid://ccvn62wrpttv2" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Door_Round.gltf" id="10_e07hb"]
 [ext_resource type="PackedScene" uid="uid://b504eifocc2fr" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Straight_L.gltf" id="10_w4e5h"]
+[ext_resource type="PackedScene" uid="uid://bdqvvhaogvjv" path="res://Assets/Imports/Medieval buildings/glTF/Window_Roof_Wide.gltf" id="11_l0cnb"]
 [ext_resource type="PackedScene" uid="uid://b5ct31kbed11i" path="res://Assets/Imports/Medieval buildings/glTF/Window_Wide_Flat1.gltf" id="11_vcege"]
 [ext_resource type="PackedScene" uid="uid://g1mg5gru1j45" path="res://Assets/Imports/Medieval buildings/glTF/WindowShutters_Wide_Flat_Open.gltf" id="12_2i5v2"]
 [ext_resource type="PackedScene" uid="uid://bc88lnao6q0jm" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Window_Wide_Flat.gltf" id="13_w56gx"]
@@ -40,6 +42,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.12, 0)
 
 [node name="Stairs_Exterior_Platform45Clean3" parent="Building_Test/Foundation/Stairs" instance=ExtResource("1_e07hb")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0.12, -2)
+
+[node name="Stairs_Exterior_SingleSide2" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.0000002, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide3" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.99999976, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide8" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide9" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide4" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.9999998, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide5" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide6" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide7" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9, 0, -3.8)
+
+[node name="Stairs_Exterior_SingleSide10" parent="Building_Test/Foundation/Stairs" instance=ExtResource("4_nj2gr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11, 0, -3.8)
 
 [node name="groundFloor" type="Node3D" parent="Building_Test"]
 
@@ -219,6 +248,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.200001, 1, 1.6)
 [node name="WindowShutters_Wide_Flat_Open2" parent="Building_Test/groundFloor/Walls/Wall_front/window2" instance=ExtResource("12_2i5v2")]
 
 [node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_front/window2" instance=ExtResource("13_w56gx")]
+
+[node name="Window_Roof_Wide2" parent="Building_Test/groundFloor/Walls/Wall_front/window2" instance=ExtResource("11_l0cnb")]
 
 [node name="Wall_back" type="Node3D" parent="Building_Test/groundFloor/Walls"]
 
