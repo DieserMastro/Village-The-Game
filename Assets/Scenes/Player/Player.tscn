@@ -1,8 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3u36ff3xf5pi"]
+[gd_scene load_steps=6 format=3 uid="uid://b3u36ff3xf5pi"]
 
 [ext_resource type="Script" uid="uid://c8j710jwxvccd" path="res://Assets/Scripts/Player_Controller.gd" id="1_0ljjw"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_0ljjw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -20,11 +18,8 @@ length = 0.5
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_0ljjw")
+dash_Force = 50.0
 camera_sensitivity = 0.4
-
-[node name="forward" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 1.4000001, -0.8)
-mesh = SubResource("BoxMesh_0ljjw")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
@@ -37,10 +32,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
 [node name="cameraGimbal" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 1.3, 0)
+transform = Transform3D(1, 0, 0, 0, 0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 1.5, 0)
 
 [node name="head" type="Node3D" parent="cameraGimbal"]
-transform = Transform3D(1, 0, 0, 0, 0.98480785, -0.1736482, 0, 0.1736482, 0.98480785, 0, 0.09848082, 0.01736483)
+transform = Transform3D(1, 0, 0, 0, 0.98480785, -0.17364818, 0, 0.17364818, 0.98480785, 0, 0.09848082, 0.01736483)
 
 [node name="RayCast3D" type="RayCast3D" parent="cameraGimbal/head"]
 transform = Transform3D(-25, 0, -3.774895e-07, 0, 25, 0, 3.774895e-06, 0, -2.5, 0, 0, -2.6)
@@ -48,7 +43,7 @@ target_position = Vector3(0, 0, -1)
 debug_shape_thickness = 5
 
 [node name="Camera3D" type="Camera3D" parent="cameraGimbal"]
-transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 0.9000001, 2.6000001)
+transform = Transform3D(1, 0, 0, 0, 0.98480785, -0.17364818, 0, 0.17364818, 0.98480785, 0, 0, 0)
 
 [node name="stairsCollider" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.7000001, -0.5)
@@ -59,7 +54,7 @@ wait_time = 2.5
 one_shot = true
 
 [node name="dashDuration" type="Timer" parent="."]
-wait_time = 0.5
+wait_time = 0.115
 one_shot = true
 
 [connection signal="timeout" from="dashCooldown" to="." method="_on_dash_cooldown_timeout"]
