@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cutn7doqk6rqd"]
+
+[ext_resource type="PackedScene" uid="uid://cmkevinggk6k1" path="res://stair_interior_simple_with_Collision.tscn" id="1_fkeka"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ujojv"]
+size = Vector3(1.6, 0.58, 4.62)
+
+[node name="stairs_collisioned" type="StaticBody3D"]
+
+[node name="Stair_Interior_Simple2" parent="." instance=ExtResource("1_fkeka")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.819152, -0.57357645, 0, 0.57357645, 0.819152, 0, 1.464597, -2.2635133)
+shape = SubResource("BoxShape3D_ujojv")

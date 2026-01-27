@@ -29,7 +29,7 @@ static var current_Scene: Node = null;
 
 func _ready() -> void:
 	_setup();
-	ResourceLoader.load_threaded_request(GAME_WORLD);
+	##ResourceLoader.load_threaded_request(GAME_WORLD);
 
 	
 
@@ -50,7 +50,7 @@ func _setup():
 	settingsScreen.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(settingsScreen);
 	settingsScreen.hide();
-	setGameState(GAME_STATE.START);
+	##setGameState(GAME_STATE.START);
 	
 	gameOverlay = GAME_OVERLAY.instantiate();
 	add_child(gameOverlay);

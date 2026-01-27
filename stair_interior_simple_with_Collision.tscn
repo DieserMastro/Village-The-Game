@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmkevinggk6k1"]
+
+[ext_resource type="PackedScene" uid="uid://sb0dbmm3pscp" path="res://Assets/Imports/Medieval buildings/glTF/Stair_Interior_Simple.gltf" id="1_686pm"]
+
+[node name="Stair_Interior_Simple2" instance=ExtResource("1_686pm")]
