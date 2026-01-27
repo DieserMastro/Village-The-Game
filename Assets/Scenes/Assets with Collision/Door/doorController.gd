@@ -2,6 +2,7 @@ extends Interactable
 
 
 @export var rotationSpeed: float = 5.0;
+@export var openingAngle: float = 120;
 var isOpen: bool;
 enum DOOR_STATES { IDLE = 0, OPENING = 1, CLOSING = 2}
 var doorState: int;
@@ -21,7 +22,7 @@ func _process(delta: float) -> void:
 			currentRotation += 1 * rotationSpeed;
 		DOOR_STATES.CLOSING:
 			currentRotation -= 1 * rotationSpeed;
-	if currentRotation <= 0.0 || currentRotation >= 120:
+	if currentRotation <= 0.0 || currentRotation >= openingAngle:
 		doorState = DOOR_STATES.IDLE;
 	rotation_degrees.y = currentRotation
 func _on_trigger_interaction() -> void:

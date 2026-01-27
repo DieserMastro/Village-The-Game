@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwiihjy1wy6yh"]
+
+[ext_resource type="Texture2D" uid="uid://blojobheh4uo3" path="res://Assets/Imports/Furniture/wood_table_1k.gltf/textures/wood_table_diff_1k.jpg" id="1_yu5jq"]
+[ext_resource type="ArrayMesh" uid="uid://dcyo52wyahiw3" path="res://Assets/Multistory Dungeons 2/Meshes/SRC_Props/extracted/Bench_01.Bench_01_Mesh.mesh" id="2_1a41q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jlqj"]
+albedo_texture = ExtResource("1_yu5jq")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x0spv"]
+size = Vector3(0.58, 0.48, 1.92)
+
+[node name="Bench_01" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="Bench_01_Mesh" type="MeshInstance3D" parent="StaticBody3D"]
+material_override = SubResource("StandardMaterial3D_8jlqj")
+mesh = ExtResource("2_1a41q")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049999982, 0.33999997, 2.9802322e-08)
+shape = SubResource("BoxShape3D_x0spv")
