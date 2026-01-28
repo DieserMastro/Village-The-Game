@@ -2,29 +2,28 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4epl0uh4cerj"
-path.bptc="res://.godot/imported/dirt_floor_diff_1k.jpg-f66ad502e0152759ec9b0b3b87a75bb6.bptc.ctex"
+uid="uid://cxa3fe4y1w8sv"
+path="res://.godot/imported/Ground103_1K-PNG_NormalDX.png-63892a3350a86c02602af260ac20e23d.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Texture/dirt_floor_diff_1k.jpg"
-dest_files=["res://.godot/imported/dirt_floor_diff_1k.jpg-f66ad502e0152759ec9b0b3b87a75bb6.bptc.ctex"]
+source_file="res://Assets/Texture/Ground103_1K-PNG/Ground103_1K-PNG_NormalDX.png"
+dest_files=["res://.godot/imported/Ground103_1K-PNG_NormalDX.png-63892a3350a86c02602af260ac20e23d.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=true
+compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=2
+compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -38,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

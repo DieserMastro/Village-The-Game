@@ -1,0 +1,1019 @@
+[gd_scene load_steps=61 format=3 uid="uid://kp2ihu2i8vxn"]
+
+[ext_resource type="PackedScene" uid="uid://h2n6ypqq8rdk" path="res://Assets/Imports/Furniture/KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_large.gltf" id="1_1qcod"]
+[ext_resource type="PackedScene" uid="uid://dq7g1owiou4lb" path="res://Assets/Imports/Furniture/KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_small.gltf" id="2_7qb87"]
+[ext_resource type="PackedScene" uid="uid://cib3nux0rsywi" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Corner.gltf" id="3_vfum0"]
+[ext_resource type="PackedScene" uid="uid://dva3xdf3vxfpq" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Straight.gltf" id="4_njyh5"]
+[ext_resource type="PackedScene" uid="uid://wmh8fj2ru4v7" path="res://Assets/Imports/Medieval buildings/glTF/Corner_ExteriorWide_Wood.gltf" id="5_g4fwk"]
+[ext_resource type="PackedScene" uid="uid://cutn7doqk6rqd" path="res://Assets/Scenes/Building_1/stairs_collisioned.tscn" id="6_tjk85"]
+[ext_resource type="PackedScene" uid="uid://djwjb8m3u21gh" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Exterior_Wood.gltf" id="7_16u16"]
+[ext_resource type="PackedScene" uid="uid://bbqi1o1rs6s07" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine9.gltf" id="8_06fe8"]
+[ext_resource type="PackedScene" uid="uid://0ka87y3x1wsd" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine6.gltf" id="9_lrlvq"]
+[ext_resource type="PackedScene" uid="uid://b0055s2h6n22w" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_R.gltf" id="10_qkvtk"]
+[ext_resource type="PackedScene" uid="uid://cm15ixa8u2d05" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_L.gltf" id="11_fghk6"]
+[ext_resource type="PackedScene" uid="uid://cesfdf14bmoy5" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_Center_Mirror.gltf" id="12_2uxps"]
+[ext_resource type="PackedScene" uid="uid://csvmnxic7b53r" path="res://Assets/Imports/Medieval buildings/glTF/Stairs_Exterior_SingleSide.gltf" id="13_180ty"]
+[ext_resource type="PackedScene" uid="uid://bayy7cpojvinb" path="res://Assets/Imports/Medieval buildings/glTF/Corner_ExteriorWide_Brick.gltf" id="14_eghxw"]
+[ext_resource type="PackedScene" uid="uid://s83ce405a25d" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Exterior_Brick.gltf" id="15_0bboo"]
+[ext_resource type="PackedScene" uid="uid://bf0i1o8if6nev" path="res://Assets/Scenes/Building_1/flooring.tscn" id="16_aq0vt"]
+[ext_resource type="PackedScene" uid="uid://c0gt33vqxf4wq" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Straight_R.gltf" id="17_d0ooq"]
+[ext_resource type="PackedScene" uid="uid://b504eifocc2fr" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Straight_L.gltf" id="18_amwmp"]
+[ext_resource type="PackedScene" uid="uid://cbxdgyolx7uof" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Straight.gltf" id="19_dwx3x"]
+[ext_resource type="PackedScene" uid="uid://b5ct31kbed11i" path="res://Assets/Imports/Medieval buildings/glTF/Window_Wide_Flat1.gltf" id="20_ynb3a"]
+[ext_resource type="PackedScene" uid="uid://bc88lnao6q0jm" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Window_Wide_Flat.gltf" id="21_58grx"]
+[ext_resource type="PackedScene" uid="uid://bdqvvhaogvjv" path="res://Assets/Imports/Medieval buildings/glTF/Window_Roof_Wide.gltf" id="22_w4cyw"]
+[ext_resource type="PackedScene" uid="uid://g1mg5gru1j45" path="res://Assets/Imports/Medieval buildings/glTF/WindowShutters_Wide_Flat_Open.gltf" id="23_rf5qd"]
+[ext_resource type="PackedScene" uid="uid://c1n5fi6r0gbv1" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine1.gltf" id="24_v2fvi"]
+[ext_resource type="PackedScene" uid="uid://ccvn62wrpttv2" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Door_Round.gltf" id="25_ys057"]
+[ext_resource type="PackedScene" uid="uid://bjgcoitwihxeq" path="res://Assets/Imports/Medieval buildings/glTF/DoorFrame_Round_WoodDark.gltf" id="26_y2tbc"]
+[ext_resource type="PackedScene" uid="uid://i1yhstjtu3m8" path="res://Assets/Scenes/Assets with Collision/Door/door.tscn" id="27_gr5nd"]
+[ext_resource type="PackedScene" uid="uid://dwiihjy1wy6yh" path="res://Assets/Imports/Furniture/bench_01.tscn" id="28_yjeo2"]
+[ext_resource type="PackedScene" uid="uid://dlkhnthyhck3x" path="res://Assets/Imports/Furniture/table_01.tscn" id="29_v8ced"]
+[ext_resource type="PackedScene" uid="uid://xdmoyhkhnat7" path="res://Assets/Imports/Furniture/cupboard.tscn" id="30_v26tx"]
+[ext_resource type="PackedScene" uid="uid://bungc2q5ho67h" path="res://Assets/Imports/Medieval buildings/glTF/crate.tscn" id="31_qk3jh"]
+[ext_resource type="PackedScene" uid="uid://cu7sxqwu5s8ay" path="res://Assets/Imports/Furniture/chandelier/33-chandelier/chandelier_4.tscn" id="32_0pay3"]
+[ext_resource type="PackedScene" uid="uid://c50l12pm10xm4" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Interior_Big.gltf" id="33_83e61"]
+[ext_resource type="PackedScene" uid="uid://bx140n67li0vi" path="res://Assets/Imports/Medieval buildings/glTF/door_new2.glb" id="34_ogsvy"]
+[ext_resource type="PackedScene" uid="uid://bm6a37je2o3xq" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_WoodGrid.gltf" id="35_j35p5"]
+[ext_resource type="PackedScene" uid="uid://dbeqtgtegj4dv" path="res://Assets/Imports/Medieval buildings/glTF/Overhang_Roof_Plaster.gltf" id="36_at6xj"]
+[ext_resource type="PackedScene" uid="uid://c65wibho325xn" path="res://Assets/Imports/Medieval buildings/glTF/stairs_inside.tscn" id="37_70vij"]
+[ext_resource type="PackedScene" uid="uid://8jl3hul4qia3" path="res://Assets/Imports/Medieval buildings/glTF/Stair_Interior_Rails.gltf" id="38_d7pfi"]
+[ext_resource type="PackedScene" uid="uid://yplbsremwc86" path="res://Assets/Imports/Medieval buildings/glTF/Floor_WoodDark.gltf" id="39_lmeol"]
+[ext_resource type="PackedScene" uid="uid://cdx8rdnr58xas" path="res://Assets/Imports/Medieval buildings/glTF/Floor_WoodDark_Half2.gltf" id="40_so28v"]
+[ext_resource type="PackedScene" uid="uid://688xrnj2wq65" path="res://Assets/Imports/Medieval buildings/glTF/Roof_RoundTiles_6x14.gltf" id="41_j62h5"]
+[ext_resource type="PackedScene" uid="uid://c2tvt42drdo2e" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Front_Brick6.gltf" id="42_eopo3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2i5v2"]
+size = Vector3(3.8, 0.04, 3.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w56gx"]
+size = Vector3(12, 0.08, 3.76)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5q2av"]
+size = Vector3(1.9799999, 0.08, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nbion"]
+size = Vector3(4, 2.2, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y546o"]
+size = Vector3(12, 2.2, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bouni"]
+size = Vector3(0.099999994, 2.2, 3.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_75h0y"]
+size = Vector3(0.2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vcege"]
+size = Vector3(12.179999, 3, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_poths"]
+size = Vector3(18, 3.8, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3eews"]
+size = Vector3(0.001, 3.2, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mm657"]
+size = Vector3(4.24, 2.8, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rnx6w"]
+size = Vector3(0.001, 6.2000003, 7.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1mgj"]
+size = Vector3(0.001, 3, 2.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ft4m"]
+size = Vector3(7.4270267, 2.8, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w6jnf"]
+size = Vector3(7.6, 0.001, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hygxw"]
+size = Vector3(0.001, 3.4, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ya570"]
+size = Vector3(7.8, 3, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbj1v"]
+size = Vector3(6.12, 2.8, 0.001)
+
+[node name="Building" type="Node3D"]
+
+[node name="Building_Test" type="Node3D" parent="."]
+
+[node name="Foundation" type="Node3D" parent="Building_Test"]
+
+[node name="Balcony" type="Node3D" parent="Building_Test/Foundation"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0.4)
+
+[node name="floor" type="Node3D" parent="Building_Test/Foundation/Balcony"]
+
+[node name="floor_wood_large2" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("1_1qcod")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1999998, 1.12, 3.2)
+
+[node name="floor_wood_large3" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("1_1qcod")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 1.12, 3.2)
+
+[node name="floor_wood_large4" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("1_1qcod")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.08, 1.12, 3.26)
+
+[node name="floor_wood_small2" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("2_7qb87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8000002, 1.12, 2.2)
+
+[node name="floor_wood_small3" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("2_7qb87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8000002, 1.12, 4.2)
+
+[node name="floor_wood_small4" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("2_7qb87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8000002, 1.12, 2.2)
+
+[node name="floor_wood_small6" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("2_7qb87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19999981, 1.12, 2.2)
+
+[node name="floor_wood_small5" parent="Building_Test/Foundation/Balcony/floor" instance=ExtResource("2_7qb87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8000002, 1.12, 4.2)
+
+[node name="Balcony_Cross_Corner2" parent="Building_Test/Foundation/Balcony" instance=ExtResource("3_vfum0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.76, 1.2, 4.1399994)
+
+[node name="Balcony_Cross_Corner4" parent="Building_Test/Foundation/Balcony" instance=ExtResource("3_vfum0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.82, 1.2, 4.1399994)
+
+[node name="Balcony_Cross_Corner5" parent="Building_Test/Foundation/Balcony" instance=ExtResource("3_vfum0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.1999998, 1.2, 4.1399994)
+
+[node name="Balcony_Cross_Corner3" parent="Building_Test/Foundation/Balcony" instance=ExtResource("3_vfum0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -12.200001, 1.2, 4.1399994)
+
+[node name="Balcony_Cross_Straight3" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2, 1.2, 4.14)
+
+[node name="Balcony_Cross_Straight8" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.2, 1.2, 2.1599998)
+
+[node name="Balcony_Cross_Straight9" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 3.7600002, 1.2, 2.14)
+
+[node name="Balcony_Cross_Straight10" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 3.7600002, 1.2, 2.14)
+
+[node name="Balcony_Cross_Straight4" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.2, 1.2, 4.14)
+
+[node name="Balcony_Cross_Straight5" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 1.2, 4.14)
+
+[node name="Balcony_Cross_Straight6" parent="Building_Test/Foundation/Balcony" instance=ExtResource("4_njyh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2, 1.2, 4.14)
+
+[node name="Corner_ExteriorWide_Wood2" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7799997, 0.22, 5.1599994)
+
+[node name="Corner_ExteriorWide_Wood3" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7999997, 0.22, 5.1799994)
+
+[node name="Corner_ExteriorWide_Wood6" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7999997, -0.58, 3.1799994)
+
+[node name="Corner_ExteriorWide_Wood4" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2000003, 0.22, 5.1799994)
+
+[node name="Corner_ExteriorWide_Wood7" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2000003, -0.58, 3.1799994)
+
+[node name="Corner_ExteriorWide_Wood5" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.200001, 0.22, 5.1799994)
+
+[node name="stairs_collisioned" parent="Building_Test/Foundation/Balcony" instance=ExtResource("6_tjk85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, -1.88, 7.55)
+disable_mode = 1
+input_ray_pickable = false
+
+[node name="collisions" type="Node3D" parent="Building_Test/Foundation/Balcony"]
+
+[node name="collision3" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7999997, 1.16, 3.1000004)
+shape = SubResource("BoxShape3D_2i5v2")
+
+[node name="collision1" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1000004, 1.14, 3.1200001)
+shape = SubResource("BoxShape3D_w56gx")
+
+[node name="collision2" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999974, 1.14, 2.3000002)
+shape = SubResource("BoxShape3D_5q2av")
+
+[node name="collision4" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8000002, 1.2, 5.18)
+shape = SubResource("BoxShape3D_nbion")
+
+[node name="collision5" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2, 1.3000002, 5.18)
+shape = SubResource("BoxShape3D_y546o")
+
+[node name="collision6" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.229999, 1.3000002, 3.18)
+shape = SubResource("BoxShape3D_bouni")
+
+[node name="collision7" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81000143, 1.3000002, 4.2799997)
+shape = SubResource("BoxShape3D_75h0y")
+
+[node name="collision8" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/Foundation/Balcony/collisions/collision8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81000143, 1.3000002, 4.2799997)
+shape = SubResource("BoxShape3D_75h0y")
+
+[node name="Corner_Exterior_Wood2" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.2199998, 5.18)
+
+[node name="Corner_Exterior_Wood4" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2, 3.2199998, 5.18)
+
+[node name="Corner_Exterior_Wood5" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78, 3.2199998, 5.16)
+
+[node name="Corner_Exterior_Wood3" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79999995, 3.2199998, 5.18)
+
+[node name="roof" type="Node3D" parent="Building_Test/Foundation/Balcony"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13999999, -2.9802322e-08)
+
+[node name="Prop_Vine92" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("8_06fe8")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.9848077, 0.1736482, 2.6563143e-09, -0.1736482, 0.9848077, 2.680004, 6.8, 4.960001)
+
+[node name="Prop_Vine93" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("8_06fe8")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.9848077, 0.1736482, 2.6563143e-09, -0.1736482, 0.9848077, -1.3199971, 6.8, 4.960001)
+
+[node name="Prop_Vine94" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("8_06fe8")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.9848077, 0.1736482, 2.6563143e-09, -0.1736482, 0.9848077, -8.519998, 6.8, 4.959999)
+
+[node name="Prop_Vine62" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("9_lrlvq")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.9848077, 0.1736482, 2.6563143e-09, -0.1736482, 0.9848077, -5.3199944, 6.3999996, 5.5599995)
+
+[node name="Prop_Vine63" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("9_lrlvq")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.9848077, 0.1736482, 2.6563143e-09, -0.1736482, 0.9848077, -11.319995, 6.3999996, 5.5599985)
+
+[node name="Prop_Vine64" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("9_lrlvq")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563087e-09, -2.593998e-08, 0.8021232, 0.5971587, 1.6000037e-08, -0.5971587, 0.8021232, -1.1199946, 7.499999, 3.7199998)
+
+[node name="Prop_Vine65" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("9_lrlvq")]
+transform = Transform3D(1, 3.0361612e-08, 2.6563087e-09, -2.593998e-08, 0.8021232, 0.5971587, 1.6000037e-08, -0.5971587, 0.8021232, -7.119995, 7.499999, 3.7199988)
+
+[node name="Roof_Wooden_2x1_R2" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("10_qkvtk")]
+transform = Transform3D(1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.2, 3.8, 6.3199997, 3.6999993)
+
+[node name="Roof_Wooden_2x1_L2" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("11_fghk6")]
+transform = Transform3D(1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.2, -12.200001, 6.3199997, 3.6799998)
+
+[node name="Roof_Wooden_2x1_Center_Mirror2" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, 1.8, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror3" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -0.20000005, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror4" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -2.2, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror5" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -4.2, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror6" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -6.2, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror7" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -8.2, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror8" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1.05, 0, -1.8119498e-07, 0, 1.05, 0, 1.5854559e-07, 0, -1.2, -10.2, 6.34, 3.639999)
+
+[node name="Roof_Wooden_2x1_Center_Mirror9" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, 1.7999997, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror16" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, 3.7999997, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror17" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -12.2, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror10" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -0.20000029, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror11" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -2.2, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror12" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -4.2, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror13" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -6.2, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror14" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -8.2, 6.8199987, 2.2599993)
+
+[node name="Roof_Wooden_2x1_Center_Mirror15" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("12_2uxps")]
+transform = Transform3D(-1, -2.4301991e-15, -8.7422784e-08, 3.4626392e-08, 0.9182162, -0.3960798, 8.0273004e-08, -0.3960798, -0.9182162, -10.2, 6.8199987, 2.2599993)
+
+[node name="foundationEdge" type="Node3D" parent="Building_Test/Foundation"]
+
+[node name="Stairs_Exterior_SingleSide2" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.19999981, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide3" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.1999998, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide8" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.8, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide9" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide4" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.2, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide5" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.2, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide6" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide7" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.2, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide10" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.2, 0, 0.60000014)
+
+[node name="Stairs_Exterior_SingleSide11" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.19999981, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide12" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.1999998, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide13" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.8, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide14" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide15" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.2, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide16" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.2, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide17" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide18" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.2, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide19" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.2, 0, -7.5199995)
+
+[node name="Stairs_Exterior_SingleSide20" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -12.3, 0, 0.2800007)
+
+[node name="Stairs_Exterior_SingleSide22" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -12.3, 0, -1.7199991)
+
+[node name="Stairs_Exterior_SingleSide23" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -12.3, 0, -3.7199993)
+
+[node name="Stairs_Exterior_SingleSide24" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -12.3, 0, -5.7200003)
+
+[node name="Stairs_Exterior_SingleSide25" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-1, 0, -2.6226832e-07, 0, 1, 0, 2.6226832e-07, 0, -1, 3.9800005, 0, -5.7200003)
+
+[node name="Stairs_Exterior_SingleSide26" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-1, 0, -2.6226832e-07, 0, 1, 0, 2.6226832e-07, 0, -1, 3.980001, 0, -3.7200003)
+
+[node name="Stairs_Exterior_SingleSide27" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-1, 0, -2.6226832e-07, 0, 1, 0, 2.6226832e-07, 0, -1, 3.980001, 0, -1.7200005)
+
+[node name="Stairs_Exterior_SingleSide29" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("13_180ty")]
+transform = Transform3D(-1, 0, -2.6226832e-07, 0, 1, 0, 2.6226832e-07, 0, -1, 3.9800014, 0, 0.2800007)
+
+[node name="Corner_ExteriorWide_Brick2" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("14_eghxw")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.12, -0.00999999, 1.64)
+
+[node name="Corner_Exterior_Brick2" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.1200004, 3, 1.64)
+
+[node name="Corner_ExteriorWide_Brick4" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("14_eghxw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02, -0.00999999, -6.799999)
+
+[node name="Corner_Exterior_Brick4" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02, 3, -6.799999)
+
+[node name="Corner_ExteriorWide_Brick5" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("14_eghxw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.38, -0.00999999, -6.799999)
+
+[node name="Corner_Exterior_Brick5" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.38, 3, -6.799999)
+
+[node name="Corner_ExteriorWide_Brick3" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("14_eghxw")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.354235, -0.00999999, 1.6199989)
+
+[node name="Corner_Exterior_Brick3" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.354235, 3, 1.6199999)
+
+[node name="Corner_Exterior_Brick6" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.1200004, 4.6, 1.64)
+
+[node name="Corner_Exterior_Brick7" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02, 4.6, -6.799999)
+
+[node name="Corner_Exterior_Brick8" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.38, 4.6, -6.799999)
+
+[node name="Corner_Exterior_Brick9" parent="Building_Test/Foundation/foundationEdge" instance=ExtResource("15_0bboo")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.354235, 4.6, 1.6199999)
+
+[node name="groundFloor" type="Node3D" parent="Building_Test"]
+
+[node name="flooring" parent="Building_Test/groundFloor" instance=ExtResource("16_aq0vt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0, 0)
+
+[node name="Walls" type="Node3D" parent="Building_Test/groundFloor"]
+
+[node name="Wall_right" type="Node3D" parent="Building_Test/groundFloor/Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, 0, 0.06)
+
+[node name="Wall_Plaster_Straight_R7" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.11, 1, -3.71)
+
+[node name="Wall_Plaster_Straight_L7" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.11, 1.0000001, -5.71)
+
+[node name="Wall_Plaster_Straight_L5" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.11, 1.0000001, 0.29)
+
+[node name="Wall_Plaster_Straight7" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.1000037, 4.12, -5.72001)
+
+[node name="Wall_Plaster_Straight8" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.1000037, 4.12, -3.7200084)
+
+[node name="Wall_Plaster_Straight9" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.1000037, 4.12, -1.7200093)
+
+[node name="Wall_Plaster_Straight11" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.100003, 4.12, 0.27999252)
+
+[node name="window3" parent="Building_Test/groundFloor/Walls/Wall_right" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1099997, 1, -1.71)
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_right/window3" instance=ExtResource("21_58grx")]
+
+[node name="Window_Roof_Wide2" parent="Building_Test/groundFloor/Walls/Wall_right/window3" instance=ExtResource("22_w4cyw")]
+
+[node name="Wall_left" type="Node3D" parent="Building_Test/groundFloor/Walls"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8.2, 0, -7.2000003)
+
+[node name="Wall_Plaster_Straight_R8" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1099987, 1, -3.6499999)
+
+[node name="Wall_Plaster_Straight_L8" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.11, 1.0000001, -7.65)
+
+[node name="Wall_Plaster_Straight_L10" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1099997, 1.0000001, -1.6499996)
+
+[node name="Wall_Plaster_Straight2" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.119997, 4.12, -7.5399942)
+
+[node name="Wall_Plaster_Straight4" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.119997, 4.12, -5.5399933)
+
+[node name="Wall_Plaster_Straight5" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.119997, 4.12, -3.5399926)
+
+[node name="Wall_Plaster_Straight6" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(6.1588835e-08, 0, 1, 0, 1, 0, -1, 0, 6.1588835e-08, 5.119998, 4.12, -1.5399914)
+
+[node name="window4" parent="Building_Test/groundFloor/Walls/Wall_left" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(-2.1855693e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855693e-07, 5.1099987, 1, -5.6499987)
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_left/window4" instance=ExtResource("21_58grx")]
+
+[node name="Window_Roof_Wide2" parent="Building_Test/groundFloor/Walls/Wall_left/window4" instance=ExtResource("22_w4cyw")]
+
+[node name="Wall_front" type="Node3D" parent="Building_Test/groundFloor/Walls"]
+
+[node name="colliders" type="StaticBody3D" parent="Building_Test/groundFloor/Walls/Wall_front"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2.2, 1.6994998)
+shape = SubResource("BoxShape3D_vcege")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.200001, 5.6000004, 1.6599998)
+shape = SubResource("BoxShape3D_poths")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.200001, 5.6000004, -6.7400007)
+shape = SubResource("BoxShape3D_poths")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9394994, 5.7000003, -2.6400003)
+shape = SubResource("BoxShape3D_3eews")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6800003, 2.4, 1.7005)
+shape = SubResource("BoxShape3D_mm657")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3899994, 2.2, -6.5004997)
+shape = SubResource("BoxShape3D_vcege")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.02, 2.5, -6.4995003)
+shape = SubResource("BoxShape3D_mm657")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.020499, 4.2, -2.599501)
+shape = SubResource("BoxShape3D_rnx6w")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Building_Test/groundFloor/Walls/Wall_front/colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.979501, 2.5, -2.4995008)
+shape = SubResource("BoxShape3D_rnx6w")
+
+[node name="Wall_Plaster_Straight_R2" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 1, 1.6)
+
+[node name="Wall_Plaster_Straight_R4" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8000002, 1, 1.6)
+
+[node name="Wall_Plaster_Straight_L2" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("18_amwmp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8000001, 1.0000001, 1.6)
+
+[node name="Wall_Plaster_Straight_L4" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("18_amwmp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2, 1.0000001, 1.6)
+
+[node name="Wall_Plaster_Straight_L3" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("18_amwmp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 1.0000001, 1.6)
+
+[node name="Wall_Plaster_Straight_R5" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.2, 1, 1.6)
+
+[node name="window" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2000003, 1, 1.6)
+
+[node name="WindowShutters_Wide_Flat_Open2" parent="Building_Test/groundFloor/Walls/Wall_front/window" instance=ExtResource("23_rf5qd")]
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_front/window" instance=ExtResource("21_58grx")]
+
+[node name="window2" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.200001, 1, 1.6)
+
+[node name="WindowShutters_Wide_Flat_Open2" parent="Building_Test/groundFloor/Walls/Wall_front/window2" instance=ExtResource("23_rf5qd")]
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_front/window2" instance=ExtResource("21_58grx")]
+
+[node name="Prop_Vine12" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("24_v2fvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6000001, 3.4, 1.6200001)
+
+[node name="Prop_Vine13" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("24_v2fvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3.4, 1.6200001)
+
+[node name="Wall_Plaster_Straight2" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.200001, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight3" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.200001, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight4" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.200001, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight5" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2000008, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight6" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.200001, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight7" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.200001, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight8" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7999992, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight9" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7999992, 4.0800004, 1.6)
+
+[node name="Wall_Plaster_Straight10" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000076, 4.0800004, 1.6)
+
+[node name="Wall_back" type="Node3D" parent="Building_Test/groundFloor/Walls"]
+
+[node name="Wall_Plaster_Straight_R3" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.2, 1, -6.7199993)
+
+[node name="Wall_Plaster_Straight_R6" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12.2, 1, -6.7199984)
+
+[node name="Wall_Plaster_Straight_L5" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.2, 1.0000001, -6.7199993)
+
+[node name="Wall_Plaster_Straight_L6" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.8000002, 1.0000001, -6.7200003)
+
+[node name="Wall_Plaster_Straight_L7" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("18_amwmp")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.1999998, 1.0000001, -6.7199993)
+
+[node name="Wall_Plaster_Straight_R7" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("17_d0ooq")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.19999981, 1, -6.7199993)
+
+[node name="window3" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.1999993, 1, -6.7199993)
+
+[node name="WindowShutters_Wide_Flat_Open2" parent="Building_Test/groundFloor/Walls/Wall_back/window3" instance=ExtResource("23_rf5qd")]
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_back/window3" instance=ExtResource("21_58grx")]
+
+[node name="window4" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("20_ynb3a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.8000011, 1, -6.7200003)
+
+[node name="WindowShutters_Wide_Flat_Open2" parent="Building_Test/groundFloor/Walls/Wall_back/window4" instance=ExtResource("23_rf5qd")]
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_back/window4" instance=ExtResource("21_58grx")]
+
+[node name="Wall_Plaster_Straight12" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -4.219999, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight13" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -2.219997, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight14" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -0.21999785, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight15" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, 1.7800031, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight16" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, 3.780004, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight18" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -12.219997, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight19" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -10.219997, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight20" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -8.219997, 4.12, -6.6600084)
+
+[node name="Wall_Plaster_Straight21" parent="Building_Test/groundFloor/Walls/Wall_back" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-1, 0, 1.7877447e-08, 0, 1, 0, -1.7877447e-08, 0, -1, -6.219996, 4.12, -6.6600084)
+
+[node name="doorNode" type="Node3D" parent="Building_Test/groundFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 1, 1.6000001)
+
+[node name="Wall_Plaster_Door_Round2" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("25_ys057")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0, -1.1920929e-07)
+
+[node name="Corner_Exterior_Wood2" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48000002, 0, -0.0200001)
+
+[node name="Corner_Exterior_Wood3" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52, 0, -0.0200001)
+
+[node name="DoorFrame_Round_WoodDark2" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("26_y2tbc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52000004, 0, -2.3841858e-07)
+
+[node name="Door" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("27_gr5nd")]
+
+[node name="doorNode2" type="Node3D" parent="Building_Test/groundFloor"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.6800003, 1, -8.72)
+
+[node name="Wall_Plaster_Door_Round2" parent="Building_Test/groundFloor/doorNode2" instance=ExtResource("25_ys057")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52000046, 0, -2)
+
+[node name="Corner_Exterior_Wood2" parent="Building_Test/groundFloor/doorNode2" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47999954, 0, -2.020001)
+
+[node name="Corner_Exterior_Wood3" parent="Building_Test/groundFloor/doorNode2" instance=ExtResource("7_16u16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5200005, 0, -2.0200005)
+
+[node name="DoorFrame_Round_WoodDark2" parent="Building_Test/groundFloor/doorNode2" instance=ExtResource("26_y2tbc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52000046, 0, -2)
+
+[node name="Door" parent="Building_Test/groundFloor/doorNode2" instance=ExtResource("27_gr5nd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19999933, 0, -2.0000005)
+
+[node name="Interior" type="Node3D" parent="Building_Test/groundFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19.800001)
+
+[node name="Furniture" type="Node3D" parent="Building_Test/groundFloor/Interior"]
+
+[node name="Bench_01" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("28_yjeo2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3999996, 1, -20.800001)
+
+[node name="Bench_02" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("28_yjeo2")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.5999994, 1, -19.000002)
+
+[node name="Table_01" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("29_v8ced")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6000001, 1, -20.800001)
+
+[node name="Table_02" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("29_v8ced")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6, 4.2000003, -23.320002)
+
+[node name="Cupboard" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("30_v26tx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.6499987, 1, -25.850002)
+
+[node name="Cupboard2" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("30_v26tx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.049998403, 1, -25.850002)
+
+[node name="Prop_Crate2" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("31_qk3jh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.400001, 1.2, -25.600002)
+
+[node name="Prop_Crate5" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("31_qk3jh")]
+transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, -12.000001, 2.24, -25.2)
+
+[node name="Prop_Crate4" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("31_qk3jh")]
+transform = Transform3D(0.9848077, 0, 0.17364818, 0, 1, 0, -0.17364818, 0, 0.9848077, -12.400001, 1.2, -24.400002)
+
+[node name="Prop_Crate3" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("31_qk3jh")]
+transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -11.200001, 1.2, -25.400002)
+
+[node name="chandelier4" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("32_0pay3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 8.742278e-08, 0, 8.742278e-08, -1, -0.4, 2.8, -22.400002)
+
+[node name="Corner_Interior_Big16" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
+transform = Transform3D(-9.184191e-16, 1.0499997, -2.9802322e-08, 4.5896947e-08, -2.9802322e-08, -1.0499997, -1.0499998, -3.5238205e-15, -4.5896943e-08, -5.1400003, 4.1000004, 0.15999842)
+
+[node name="Corner_Interior_Big17" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
+transform = Transform3D(4.5896957e-08, 1.2, -4.5896957e-08, 9.1793915e-08, -5.245367e-08, -1.05, -1.05, 5.2453665e-08, -9.1793915e-08, -1.98, 4.1000004, 0.15999842)
+
+[node name="Corner_Interior_Big18" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.05, -1.0927848e-07, 4.0124395e-15, 0, -5.4639237e-08, -1.05, 9.179392e-08, 1.25, -4.5896957e-08, 0.019999951, 4.1000004, 0.15999842)
+
+[node name="Corner_Interior_Big20" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.05, -1.0927848e-07, 4.0124395e-15, 0, -5.4639237e-08, -1.05, 9.179392e-08, 1.25, -4.5896957e-08, 0.019999951, 4.100001, -3.8400016)
+
+[node name="Corner_Interior_Big19" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
+transform = Transform3D(-9.184191e-16, 1.0499997, -2.9802322e-08, 4.5896947e-08, -2.9802322e-08, -1.0499997, -1.0499998, -3.5238205e-15, -4.5896943e-08, 1.62, 4.1000004, 0.15999842)
+
+[node name="frame" type="Node3D" parent="Building_Test/groundFloor/Interior"]
+
+[node name="door_new2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("34_ogsvy")]
+transform = Transform3D(-4.371139e-08, 0, 0.98232734, 0, 1, 0, -1, 0, -4.2938897e-08, -5.28, 1, -23.320002)
+
+[node name="DoorFrame_Round_WoodDark3" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("26_y2tbc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.280002, 1, -23.32)
+
+[node name="Corner_Interior_Big2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-4.5896957e-08, 0, -1.05, 0, 1.05, 0, 1.05, 0, -4.5896957e-08, -5.44, 1.12, -20.36)
+
+[node name="Corner_Interior_Big15" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-4.5896957e-08, 0, -1.05, 0, 1.05, 0, 1.05, 0, -4.5896957e-08, -5.44, 4.28, -20.36)
+
+[node name="Corner_Interior_Big3" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.94, 1, -26.44)
+
+[node name="Corner_Interior_Big4" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.94, 3.9999995, -26.44)
+
+[node name="Corner_Interior_Big5" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -13.26, 1, -26.44)
+
+[node name="Corner_Interior_Big6" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -13.26, 3.9999995, -26.44)
+
+[node name="Corner_Interior_Big7" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -13.22, 1, -20.24)
+
+[node name="Corner_Interior_Big8" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -13.22, 3.9999995, -20.24)
+
+[node name="Corner_Interior_Big9" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-2.1855693e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855693e-07, 4.9, 1, -18.32)
+
+[node name="Corner_Interior_Big10" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(-2.1855693e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855693e-07, 4.9, 3.9999995, -18.32)
+
+[node name="Corner_Interior_Big11" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -13.220001, 1, -18.420002)
+
+[node name="Corner_Interior_Big12" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -13.220001, 3.9999995, -18.420002)
+
+[node name="Corner_Interior_Big13" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -13.220001, 1, -20.220001)
+
+[node name="Corner_Interior_Big14" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("33_83e61")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -13.220001, 3.9999995, -20.220001)
+
+[node name="Wall_Plaster_WoodGrid2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("35_j35p5")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.48, 1.02, -25.320002)
+
+[node name="Wall_Plaster_WoodGrid3" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("35_j35p5")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.48, 1.02, -21.320002)
+
+[node name="Wall_Plaster_Straight2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.26, 1.0600002, -20.12)
+
+[node name="Wall_Plaster_Straight3" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.260001, 1.0600002, -20.12)
+
+[node name="Wall_Plaster_Straight4" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.260001, 1.0600002, -20.12)
+
+[node name="Wall_Plaster_Straight5" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.260001, 1.0600002, -20.12)
+
+[node name="Overhang_Roof_Plaster2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4.2599998, -21.400002)
+
+[node name="Overhang_Roof_Plaster3" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4.2599998, -23.400002)
+
+[node name="Overhang_Roof_Plaster4" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4.2599998, -25.400002)
+
+[node name="Overhang_Roof_Plaster5" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4.2599998, -21.400002)
+
+[node name="Overhang_Roof_Plaster6" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4.2599998, -23.400002)
+
+[node name="Overhang_Roof_Plaster7" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4.2599998, -25.400002)
+
+[node name="Overhang_Roof_Plaster8" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.2599998, -21.400002)
+
+[node name="Overhang_Roof_Plaster9" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.2599998, -23.400002)
+
+[node name="Overhang_Roof_Plaster10" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.2599998, -25.400002)
+
+[node name="Overhang_Roof_Plaster11" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 4.2599998, -21.400002)
+
+[node name="Overhang_Roof_Plaster12" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 4.2599998, -23.400002)
+
+[node name="Overhang_Roof_Plaster13" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("36_at6xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 4.2599998, -25.400002)
+
+[node name="Stair_Interior_SolidExtended2" parent="Building_Test/groundFloor/Interior/frame" instance=ExtResource("37_70vij")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.2000003, 1, -19.2)
+
+[node name="Stair_Interior_Rails2" parent="Building_Test/groundFloor/Interior/frame/Stair_Interior_SolidExtended2" instance=ExtResource("38_d7pfi")]
+
+[node name="Colliders" type="Node3D" parent="Building_Test/groundFloor/Interior/frame"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Building_Test/groundFloor/Interior/frame/Colliders"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/frame/Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.300501, 2.6, -21.4)
+shape = SubResource("BoxShape3D_b1mgj")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/frame/Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.300501, 2.6, -25.2)
+shape = SubResource("BoxShape3D_b1mgj")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/frame/Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.086988, 2.5, -20.2)
+shape = SubResource("BoxShape3D_7ft4m")
+
+[node name="2nd_Floor" type="Node3D" parent="Building_Test/groundFloor/Interior"]
+
+[node name="flooring" type="Node3D" parent="Building_Test/groundFloor/Interior/2nd_Floor"]
+
+[node name="Floor_WoodDark2" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.000001, 4.2000003, -21.4)
+
+[node name="Floor_WoodDark3" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.000001, 4.2000003, -21.4)
+
+[node name="Floor_WoodDark4" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.000001, 4.2000003, -23.4)
+
+[node name="Floor_WoodDark5" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.000001, 4.2000003, -23.4)
+
+[node name="Floor_WoodDark6" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.000001, 4.2000003, -25.4)
+
+[node name="Floor_WoodDark7" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.000001, 4.2000003, -25.4)
+
+[node name="Floor_WoodDark8" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.000001, 4.2000003, -21.4)
+
+[node name="Floor_WoodDark9" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.000001, 4.2000003, -23.4)
+
+[node name="Floor_WoodDark10" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("39_lmeol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.000001, 4.2000003, -25.4)
+
+[node name="Floor_WoodDark_Half22" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0000005, 4.2000003, -21.4)
+
+[node name="Floor_WoodDark_Half23" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0000005, 4.2000003, -23.4)
+
+[node name="Floor_WoodDark_Half24" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0000005, 4.2000003, -25.4)
+
+[node name="Floor_WoodDark_Half25" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2200003, 4.2000003, -25.4)
+
+[node name="Floor_WoodDark_Half26" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2200003, 4.2000003, -23.4)
+
+[node name="Floor_WoodDark_Half27" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring" instance=ExtResource("40_so28v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2200003, 4.2000003, -21.4)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/flooring/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.3, 3.9999988, -23.300001)
+shape = SubResource("BoxShape3D_w6jnf")
+
+[node name="walls" type="Node3D" parent="Building_Test/groundFloor/Interior/2nd_Floor"]
+
+[node name="Wall_Plaster_Straight6" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.26, 4.1600003, -20.12)
+
+[node name="Wall_Plaster_Straight7" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.260001, 4.1600003, -20.12)
+
+[node name="Wall_Plaster_Straight8" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.260001, 4.1600003, -20.12)
+
+[node name="Wall_Plaster_Straight10" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.220001, 4.1200004, -25.300001)
+
+[node name="Wall_Plaster_Straight11" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.220001, 4.1200004, -23.300001)
+
+[node name="Wall_Plaster_Straight12" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("19_dwx3x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.220001, 4.1200004, -21.300001)
+
+[node name="door_new3" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("34_ogsvy")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, 0, 0, 0.98232734, -12.08, 4.200001, -20.119999)
+
+[node name="DoorFrame_Round_WoodDark4" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls" instance=ExtResource("26_y2tbc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.080002, 4.200001, -20.12)
+
+[node name="Door2" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/DoorFrame_Round_WoodDark4" instance=ExtResource("27_gr5nd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7199993, 0, -0.13999999)
+openingAngle = 80.0
+
+[node name="collisions" type="Node3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2205, 5.8, -23.3)
+shape = SubResource("BoxShape3D_hygxw")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0205, 5.8, -23.3)
+shape = SubResource("BoxShape3D_hygxw")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.120501, 5.8, -26.5)
+shape = SubResource("BoxShape3D_ya570")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Building_Test/groundFloor/Interior/2nd_Floor/walls/collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.2805, 5.5, -19.9995)
+shape = SubResource("BoxShape3D_tbj1v")
+
+[node name="furniture" type="Node3D" parent="Building_Test/groundFloor/Interior/2nd_Floor"]
+
+[node name="Cupboard3" parent="Building_Test/groundFloor/Interior/2nd_Floor/furniture" instance=ExtResource("30_v26tx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0499983, 4.2, -25.250002)
+
+[node name="Cupboard4" parent="Building_Test/groundFloor/Interior/2nd_Floor/furniture" instance=ExtResource("30_v26tx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0499983, 4.2, -21.450003)
+
+[node name="Roof" type="Node3D" parent="Building_Test"]
+
+[node name="Roof_RoundTiles_6x142" parent="Building_Test/Roof" instance=ExtResource("41_j62h5")]
+transform = Transform3D(-5.2453668e-08, 0, -1.2, 0, 1.2, 0, 1.2, 0, -5.2453668e-08, -4.2000003, 8.000001, -2.5999997)
+
+[node name="Roof_Front_Brick62" parent="Building_Test/Roof" instance=ExtResource("42_eopo3")]
+transform = Transform3D(-5.6824803e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.6824803e-08, -13, 7.4, -2.6000001)
+
+[node name="Roof_Front_Brick63" parent="Building_Test/Roof" instance=ExtResource("42_eopo3")]
+transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, 4.6, 7.4, -2.6000001)

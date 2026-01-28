@@ -730,6 +730,9 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.59
 [node name="Table_01" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("28_bouni")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6000001, 1, -20.800001)
 
+[node name="Table_02" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("28_bouni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6, 4.2000003, -23.320002)
+
 [node name="Cupboard" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("29_bouni")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.6499987, 1, -25.850002)
 

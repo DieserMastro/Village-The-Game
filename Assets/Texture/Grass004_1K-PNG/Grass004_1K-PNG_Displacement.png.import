@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4epl0uh4cerj"
-path.bptc="res://.godot/imported/dirt_floor_diff_1k.jpg-f66ad502e0152759ec9b0b3b87a75bb6.bptc.ctex"
+uid="uid://bge0epihhk5b1"
+path.s3tc="res://.godot/imported/Grass004_1K-PNG_Displacement.png-5feed5332fe19e937360486229d68db1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,23 +11,23 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Texture/dirt_floor_diff_1k.jpg"
-dest_files=["res://.godot/imported/dirt_floor_diff_1k.jpg-f66ad502e0152759ec9b0b3b87a75bb6.bptc.ctex"]
+source_file="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG_Displacement.png"
+dest_files=["res://.godot/imported/Grass004_1K-PNG_Displacement.png-5feed5332fe19e937360486229d68db1.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=2
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=7
+roughness/src_normal="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG_NormalGL.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
