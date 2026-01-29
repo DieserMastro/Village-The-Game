@@ -6,6 +6,8 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_spxkw"]
 
 [node name="skullNpc" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_yswrv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

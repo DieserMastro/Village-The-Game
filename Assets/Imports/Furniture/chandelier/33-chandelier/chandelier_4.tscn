@@ -5484,11 +5484,11 @@ skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="ChandelierController/group24/lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1999998, 0)
-light_color = Color(0.15129802, 0.4118666, 0.74230534, 1)
+light_color = Color(0.051728405, 0.53344035, 0.73500675, 1)
 light_energy = 4.5
 light_indirect_energy = 2.5
 light_volumetric_fog_energy = 2.5
-light_size = 10.0
+light_size = 6.0
 omni_range = 9.0
 
 [node name="group25" type="Node3D" parent="ChandelierController"]

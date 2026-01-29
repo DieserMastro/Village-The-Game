@@ -18,7 +18,10 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
+	if head:
+		moveHead();
 	
+func moveHead():
 	if not isFloating:
 		return;
 	modif = sin(angle);

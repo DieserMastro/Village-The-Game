@@ -74,7 +74,7 @@ func _unhandled_input(event):
 		rotation_degrees.y -= event.screen_relative.x * camera_sensitivity; 
 		##vertical; turns only camera
 		cameraGimbal.rotation_degrees.x -= event.screen_relative.y * camera_sensitivity;
-		cameraGimbal.rotation_degrees.x = clamp(cameraGimbal.rotation_degrees.x, -50.0, 50.0);
+		cameraGimbal.rotation_degrees.x = clamp(cameraGimbal.rotation_degrees.x, -75.0, 75.0);
 		
 	
 	if event is InputEventKey:

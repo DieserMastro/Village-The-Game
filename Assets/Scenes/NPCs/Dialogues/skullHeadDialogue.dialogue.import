@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://jld8uid281w2"
+path="res://.godot/imported/skullHeadDialogue.dialogue-7b7c2c1ca989fdfefaef87604b5ff05f.tres"
+
+[deps]
+
+source_file="res://Assets/Scenes/NPCs/Dialogues/skullHeadDialogue.dialogue"
+dest_files=["res://.godot/imported/skullHeadDialogue.dialogue-7b7c2c1ca989fdfefaef87604b5ff05f.tres"]
+
+[params]
+
+defaults=true

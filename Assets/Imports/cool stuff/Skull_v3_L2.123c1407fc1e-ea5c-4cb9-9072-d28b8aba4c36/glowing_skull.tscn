@@ -8,6 +8,7 @@ transform = Transform3D(0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0, 
 
 [node name="12140SkullV3L2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0.9848077, 0.17364821, 0, -0.17364822, 0.98480785, 1.0000001, 4.3047315e-08, 7.590404e-09, 2.9802322e-08, 0, 1.7881393e-07)
+layers = 2
 material_override = ExtResource("2_ibcxj")
 mesh = ExtResource("1_p2v3n")
 
