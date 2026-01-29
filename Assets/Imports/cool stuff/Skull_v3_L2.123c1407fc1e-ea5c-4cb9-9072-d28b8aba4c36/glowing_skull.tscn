@@ -4,8 +4,16 @@
 [ext_resource type="Material" uid="uid://dgfgc8vk778gd" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skullMat.tres" id="2_ibcxj"]
 
 [node name="Glowing_Skull" type="Node3D"]
+transform = Transform3D(0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="12140SkullV3L2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0.9848077, 0.17364821, 0, -0.17364822, 0.98480785, 1.0000001, 4.3047315e-08, 7.590404e-09, 2.9802322e-08, 0, 1.7881393e-07)
 material_override = ExtResource("2_ibcxj")
 mesh = ExtResource("1_p2v3n")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="12140SkullV3L2"]
+transform = Transform3D(-4.371139e-08, 5.3290705e-15, 0.9999999, 0.9848078, -0.17364824, 4.3047315e-08, 0.17364825, 0.98480767, 7.590402e-09, -1.8329897e-07, 0.052094437, 0.29544243)
+light_color = Color(0.6124027, 0, 0.0018771475, 1)
+light_energy = 2.5
+distance_fade_enabled = true
+omni_range = 1.0

@@ -76,7 +76,7 @@ vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="Menu/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/margin_top = 36
+theme_override_constants/margin_top = 100
 
 [node name="PlayButton" type="Button" parent="Menu/MarginContainer/VBoxContainer"]
 layout_mode = 2

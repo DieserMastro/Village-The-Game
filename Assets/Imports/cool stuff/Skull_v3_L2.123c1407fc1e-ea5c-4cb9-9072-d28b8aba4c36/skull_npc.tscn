@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2s3jbypqk1w0"]
+
+[ext_resource type="Script" uid="uid://dvw4fggqfxrm5" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/SkullNPC.gd" id="1_yswrv"]
+[ext_resource type="PackedScene" uid="uid://p30vb07ita1u" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/glowing_skull.tscn" id="2_ohrhs"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_spxkw"]
+
+[node name="skullNpc" type="StaticBody3D"]
+script = ExtResource("1_yswrv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_spxkw")
+
+[node name="Glowing_Skull" parent="." instance=ExtResource("2_ohrhs")]
+transform = Transform3D(0.3288924, -0.11970704, 0, 0.11970704, 0.3288924, 0, 0, 0, 0.35, 0, 0, 0)
+
+[connection signal="triggerInteraction" from="." to="." method="_on_trigger_interaction"]

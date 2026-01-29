@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbflvu62rnml0"]
+
+[ext_resource type="Script" uid="uid://blo434t67l8tm" path="res://collect_Skulls_Quest.gd" id="1_b5s40"]
+
+[node name="skullQuest" type="Node"]
+script = ExtResource("1_b5s40")
+totalSkulls = 2
+metadata/_custom_type_script = "uid://d4hpukyshb72t"
+
+[connection signal="triggerSkullFound" from="." to="." method="_on_trigger_skull_found"]

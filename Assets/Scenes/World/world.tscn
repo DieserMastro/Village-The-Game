@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dv04quyg11skf"]
+[gd_scene load_steps=30 format=3 uid="uid://dv04quyg11skf"]
 
 [ext_resource type="Material" uid="uid://bo2vckh7oyrkv" path="res://Assets/Texture/Ground103_1K-PNG/Ground103_1K-PNG.tres" id="1_7rdkw"]
 [ext_resource type="Material" uid="uid://cnjqd7dypkbql" path="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG.tres" id="1_ahn5v"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://b3u36ff3xf5pi" path="res://Assets/Scenes/Player/Player.tscn" id="3_ahn5v"]
 [ext_resource type="FastNoiseLite" uid="uid://n7m5jql5qaaq" path="res://Assets/Imports/grass/reimport/grass_Noise.tres" id="4_6kgtb"]
 [ext_resource type="PackedScene" uid="uid://r6oose4x16me" path="res://Assets/Imports/cool stuff/scarecrow_gltf/scarecrow.gltf" id="9_g858l"]
-[ext_resource type="PackedScene" uid="uid://p30vb07ita1u" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/glowing_skull.tscn" id="10_pb8os"]
 [ext_resource type="PackedScene" uid="uid://j8lcam8eeiqh" path="res://Assets/Imports/Nature/glTF/DeadTree_6.gltf" id="12_7k4vd"]
 [ext_resource type="PackedScene" uid="uid://dnc4v6xvvomuu" path="res://Assets/Imports/Nature/glTF/DeadTree_7.gltf" id="13_y1wgp"]
 [ext_resource type="PackedScene" uid="uid://lgvkbu8mawim" path="res://Assets/Imports/Nature/glTF/DeadTree_5.gltf" id="14_tlyw5"]
@@ -20,7 +19,9 @@
 [ext_resource type="PackedScene" uid="uid://ca8vs178321si" path="res://Assets/Imports/Nature/glTF/DeadTree_10.gltf" id="19_02jbm"]
 [ext_resource type="Texture2D" uid="uid://v4q503etdoar" path="res://Assets/Imports/Textures/skybox/Panorama/Panorama_Sky_11-512x512.png" id="20_0cukx"]
 [ext_resource type="PackedScene" uid="uid://bm626yb4rp0dv" path="res://Assets/Imports/cool stuff/knight/zesty_knight.tscn" id="20_7k4vd"]
+[ext_resource type="PackedScene" uid="uid://b2s3jbypqk1w0" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_npc.tscn" id="21_tlyw5"]
 [ext_resource type="PackedScene" uid="uid://f5jsdn87vjl5" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_pickupable.tscn" id="21_y1wgp"]
+[ext_resource type="PackedScene" uid="uid://dbflvu62rnml0" path="res://Assets/Scenes/Game/quests/skull_quest.tscn" id="22_tlyw5"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bvknm"]
 
@@ -180,12 +181,6 @@ shadow_reverse_cull_face = true
 shadow_opacity = 0.41
 shadow_blur = 2.293
 
-[node name="Glowing_Skull" parent="." instance=ExtResource("10_pb8os")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2000003, 1, -58.400005)
-
-[node name="Glowing_Skull2" parent="." instance=ExtResource("10_pb8os")]
-transform = Transform3D(0.34641016, 0, 0.2, 0, 0.4, 0, -0.2, 0, 0.34641016, 8.400001, 1.78, -68)
-
 [node name="world_Props" type="Node3D" parent="."]
 
 [node name="DeadTree_62" parent="world_Props" instance=ExtResource("12_7k4vd")]
@@ -224,8 +219,22 @@ playerRef = NodePath("../Player")
 range = 0.03
 speed = 0.02
 
-[node name="skull_Pickupable" parent="." instance=ExtResource("21_y1wgp")]
+[node name="skullNpc" parent="." node_paths=PackedStringArray("skullQuest", "skullArr", "head") instance=ExtResource("21_tlyw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -63.2)
+skullQuest = NodePath("skullQuest")
+skullArr = [NodePath("skullQuest/skull_Pickupable"), NodePath("skullQuest/skull_Pickupable2")]
+head = NodePath(".")
+range = 0.1
+speed = 0.005
+isFloating = true
+prompt_message = "Talk"
+
+[node name="skullQuest" parent="skullNpc" node_paths=PackedStringArray("skulls") instance=ExtResource("22_tlyw5")]
+skulls = [NodePath("skull_Pickupable"), NodePath("skull_Pickupable2")]
+UNIQUE_ID = 1
+
+[node name="skull_Pickupable" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4674737, 5.1589146, -65.71315)
 
-[node name="skull_Pickupable2" parent="." instance=ExtResource("21_y1wgp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -63)
+[node name="skull_Pickupable2" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6, 2, -65.2)

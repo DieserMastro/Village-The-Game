@@ -751,23 +751,23 @@ transform = Transform3D(0.9848077, 0, 0.17364818, 0, 1, 0, -0.17364818, 0, 0.984
 [node name="Prop_Crate3" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("31_qk3jh")]
 transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -11.200001, 1.2, -25.400002)
 
+[node name="Corner_Interior_Big16" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
+transform = Transform3D(9.184191e-16, -1.0499997, 2.9802322e-08, -4.5896954e-08, -2.9802322e-08, -1.0499997, 1.0499998, 9.184188e-16, -4.589695e-08, 4.7400002, 6.88, -22.56)
+
+[node name="Corner_Interior_Big17" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
+transform = Transform3D(-4.5896957e-08, -1.2, 4.5896957e-08, 0, -5.2453668e-08, -1.05, 1.05, -5.2453668e-08, 0, 1.58, 6.88, -22.56)
+
+[node name="Corner_Interior_Big18" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
+transform = Transform3D(-1.05, 1.0927848e-07, -4.0124395e-15, 8.02488e-15, 5.4639237e-08, -1.05, -9.179392e-08, -1.25, -4.5896957e-08, -0.41999996, 6.88, -22.56)
+
+[node name="Corner_Interior_Big20" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
+transform = Transform3D(-1.05, 1.0927848e-07, -4.0124395e-15, 8.02488e-15, 5.4639237e-08, -1.05, -9.179392e-08, -1.25, -4.5896957e-08, -0.41999996, 6.88, -18.56)
+
+[node name="Corner_Interior_Big19" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
+transform = Transform3D(9.184191e-16, -1.0499997, 2.9802322e-08, -4.5896954e-08, -2.9802322e-08, -1.0499997, 1.0499998, 9.184188e-16, -4.589695e-08, -2.02, 6.88, -22.56)
+
 [node name="chandelier4" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("32_0pay3")]
-transform = Transform3D(-1, 0, 0, 0, 1, 8.742278e-08, 0, 8.742278e-08, -1, -0.4, 2.8, -22.400002)
-
-[node name="Corner_Interior_Big16" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
-transform = Transform3D(-9.184191e-16, 1.0499997, -2.9802322e-08, 4.5896947e-08, -2.9802322e-08, -1.0499997, -1.0499998, -3.5238205e-15, -4.5896943e-08, -5.1400003, 4.1000004, 0.15999842)
-
-[node name="Corner_Interior_Big17" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
-transform = Transform3D(4.5896957e-08, 1.2, -4.5896957e-08, 9.1793915e-08, -5.245367e-08, -1.05, -1.05, 5.2453665e-08, -9.1793915e-08, -1.98, 4.1000004, 0.15999842)
-
-[node name="Corner_Interior_Big18" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
-transform = Transform3D(1.05, -1.0927848e-07, 4.0124395e-15, 0, -5.4639237e-08, -1.05, 9.179392e-08, 1.25, -4.5896957e-08, 0.019999951, 4.1000004, 0.15999842)
-
-[node name="Corner_Interior_Big20" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
-transform = Transform3D(1.05, -1.0927848e-07, 4.0124395e-15, 0, -5.4639237e-08, -1.05, 9.179392e-08, 1.25, -4.5896957e-08, 0.019999951, 4.100001, -3.8400016)
-
-[node name="Corner_Interior_Big19" parent="Building_Test/groundFloor/Interior/Furniture/chandelier4" instance=ExtResource("33_83e61")]
-transform = Transform3D(-9.184191e-16, 1.0499997, -2.9802322e-08, 4.5896947e-08, -2.9802322e-08, -1.0499997, -1.0499998, -3.5238205e-15, -4.5896943e-08, 1.62, 4.1000004, 0.15999842)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65999997, 6.8199997, -22.36)
 
 [node name="frame" type="Node3D" parent="Building_Test/groundFloor/Interior"]
 

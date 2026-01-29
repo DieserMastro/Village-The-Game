@@ -3,3 +3,4 @@ class_name Interactable
 
 signal triggerInteraction
 @export var prompt_message: String = "Interact";
+var collider: CollisionShape3D;

@@ -8,12 +8,14 @@ const SETTINGS_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/settings
 const GAME_OVERLAY: PackedScene = preload("uid://d30pp2svsgjo7");
 
 
+
 var pauseScreen: Node = null;
 var settingsScreen: Node = null;
 var settingsScreenBool: bool = false;
 var fullscreenBool: bool = true;
 var isLoading: bool;
 var gameOverlay: Control = null;
+var questManager: Node = null;
 var load_progress = [];
 var load_Status: int = 0;
 
@@ -27,8 +29,6 @@ signal interactionAvailable
 
 ##Game Elements
 
-var qm: QuestManager = QuestManager;
-
 enum GAME_STATE {QUIT = -1, START = 0, PLAY = 1, LOAD = 2, PAUSE = 3, CONTINUE = 4};
 static var currentGameState: int;
 static var current_Scene: Node = null;
@@ -37,17 +37,15 @@ func _ready() -> void:
 	_setup();
 	ResourceLoader.load_threaded_request(GAME_WORLD);
 
-	
-
 func _process(delta: float) -> void:
 	if isLoading:
 		load_Status = ResourceLoader.load_threaded_get_status(GAME_WORLD, load_progress);
 		if load_Status == ResourceLoader.THREAD_LOAD_LOADED:
 			isLoading = false;
 			loadingDone.emit();
-	
 
 func _setup():
+	
 	pauseScreen = PAUSE_SCREEN.instantiate();
 	pauseScreen.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(pauseScreen);
@@ -126,7 +124,6 @@ func loadMainMenu():
 	isLoading = true;
 	goto_scene(MAIN_MENU)
 	
-		
 func loadGame():
 	if isLoading:
 		print("Waiting");
@@ -143,14 +140,12 @@ func pauseGame():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
 	current_Scene.get_tree().paused = true;
 	
-
 func unpauseGame():
 	pauseScreen.hide();
 	settingsScreen.hide();
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 	current_Scene.get_tree().paused = false;
 	
-
 func quitGame():
 	get_tree().quit();
 	

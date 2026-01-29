@@ -1,4 +1,4 @@
-[gd_scene load_steps=325 format=4 uid="uid://cu7sxqwu5s8ay"]
+[gd_scene load_steps=323 format=4 uid="uid://cu7sxqwu5s8ay"]
 
 [ext_resource type="Texture2D" uid="uid://f5qyi7i37ba4" path="res://Assets/Imports/Furniture/chandelier/33-chandelier/wood80.jpg" id="1_g5oes"]
 [ext_resource type="Texture2D" uid="uid://d166qhjl1j82p" path="res://Assets/Imports/Furniture/chandelier/33-chandelier/iron.jpg" id="2_idab7"]
@@ -4774,864 +4774,782 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5akxs")
 
-[sub_resource type="Animation" id="Animation_rgb6b"]
-resource_name = "Take 001"
-length = 5.0
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_v33vy"]
-_data = {
-&"Take 001": SubResource("Animation_rgb6b")
-}
-
 [node name="chandelier4" type="Node3D"]
 
-[node name="group16" type="Node3D" parent="."]
+[node name="ChandelierController" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.2, 0)
 
-[node name="pCube325" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(3.0778944, 0, 0, 0, 2.1326787, 0, 0, 0, 3.0778944, -0.47544676, 2.4200115, -3.8881048e-08)
+[node name="group16" type="Node3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.499999, 0)
+
+[node name="pCube325" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(3.0778944, 0, 0, 0, 2.132679, 0, 0, 0, 3.0778944, -0.47544676, 2.4200115, -3.8882717e-08)
 material_override = SubResource("StandardMaterial3D_2lkmu")
 mesh = SubResource("ArrayMesh_j2yju")
 skeleton = NodePath("")
 
-[node name="pCylinder5" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0866475e-08, 2.291961, 0.005957651)
+[node name="pCylinder5" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0866643e-08, 2.291961, 0.005957651)
 material_override = SubResource("StandardMaterial3D_4icnd")
 mesh = SubResource("ArrayMesh_h6qjg")
 skeleton = NodePath("")
 
-[node name="pPipe1" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4143069, -3.8881048e-08)
+[node name="pPipe1" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4143069, -3.8882717e-08)
 material_override = SubResource("StandardMaterial3D_68ks3")
 mesh = SubResource("ArrayMesh_myqu0")
 skeleton = NodePath("")
 
-[node name="pCube327" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(0.9511217, 0, 2.9272516, 0, 2.1326787, 0, -2.9272516, 0, 0.9511217, -0.14692113, 2.4200115, 0.45217672)
+[node name="pCube327" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(0.95112157, 0, 2.9272513, 0, 2.1326785, 0, -2.9272513, 0, 0.95112157, -0.14692113, 2.4200115, 0.45217672)
 material_override = SubResource("StandardMaterial3D_1b2vn")
 mesh = SubResource("ArrayMesh_rbum6")
 skeleton = NodePath("")
 
-[node name="pCube326" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(2.490069, 0, 1.8091412, 0, 2.1326787, 0, -1.8091412, 0, 2.490069, -0.3846445, 2.4200115, 0.27946055)
+[node name="pCube326" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(2.490069, 0, 1.809141, 0, 2.1326785, 0, -1.809141, 0, 2.490069, -0.3846445, 2.4200115, 0.27946055)
 material_override = SubResource("StandardMaterial3D_51qor")
 mesh = SubResource("ArrayMesh_1pew6")
 skeleton = NodePath("")
 
-[node name="pCube330" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(-3.0778944, 0, 3.769209e-16, 0, 2.1326787, 0, -3.769209e-16, 0, -3.0778944, 0.47544676, 2.4200115, -3.8881048e-08)
+[node name="pCube330" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(-3.0778944, 0, 3.7692085e-16, 0, 2.132679, 0, -3.7692085e-16, 0, -3.0778944, 0.47544676, 2.4200115, -3.8882717e-08)
 material_override = SubResource("StandardMaterial3D_pce3k")
 mesh = SubResource("ArrayMesh_dgdek")
 skeleton = NodePath("")
 
-[node name="pCube329" type="MeshInstance3D" parent="group16"]
+[node name="pCube329" type="MeshInstance3D" parent="ChandelierController/group16"]
 transform = Transform3D(-2.4900692, 0, 1.8091412, 0, 2.1326787, 0, -1.8091412, 0, -2.4900692, 0.3846445, 2.4200115, 0.27946055)
 material_override = SubResource("StandardMaterial3D_85act")
 mesh = SubResource("ArrayMesh_35kyy")
 skeleton = NodePath("")
 
-[node name="pCube328" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(-0.9511219, 0, 2.9272516, 0, 2.1326787, 0, -2.9272516, 0, -0.9511219, 0.14692113, 2.4200115, 0.45217672)
+[node name="pCube328" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(-0.9511217, 0, 2.9272513, 0, 2.1326785, 0, -2.9272513, 0, -0.9511217, 0.14692113, 2.4200115, 0.45217672)
 material_override = SubResource("StandardMaterial3D_8ap2h")
 mesh = SubResource("ArrayMesh_3qsc6")
 skeleton = NodePath("")
 
-[node name="pCube332" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(-0.9511219, 0, -2.9272516, 0, 2.1326787, 0, 2.9272516, 0, -0.9511219, 0.14692113, 2.4200115, -0.45217678)
+[node name="pCube332" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(-0.9511217, 0, -2.9272513, 0, 2.1326785, 0, 2.9272513, 0, -0.9511217, 0.14692113, 2.4200115, -0.45217678)
 material_override = SubResource("StandardMaterial3D_o70xk")
 mesh = SubResource("ArrayMesh_fampk")
 skeleton = NodePath("")
 
-[node name="pCube331" type="MeshInstance3D" parent="group16"]
+[node name="pCube331" type="MeshInstance3D" parent="ChandelierController/group16"]
 transform = Transform3D(-2.4900692, 0, -1.8091412, 0, 2.1326787, 0, 1.8091412, 0, -2.4900692, 0.3846445, 2.4200115, -0.27946064)
 material_override = SubResource("StandardMaterial3D_7ofkb")
 mesh = SubResource("ArrayMesh_hosqx")
 skeleton = NodePath("")
 
-[node name="pCube334" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(2.490069, 0, -1.8091412, 0, 2.1326787, 0, 1.8091412, 0, 2.490069, -0.3846445, 2.4200115, -0.27946064)
+[node name="pCube334" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(2.490069, 0, -1.809141, 0, 2.1326785, 0, 1.809141, 0, 2.490069, -0.3846445, 2.4200115, -0.27946064)
 material_override = SubResource("StandardMaterial3D_p557i")
 mesh = SubResource("ArrayMesh_md3y2")
 skeleton = NodePath("")
 
-[node name="pCube333" type="MeshInstance3D" parent="group16"]
-transform = Transform3D(0.9511217, 0, -2.9272516, 0, 2.1326787, 0, 2.9272516, 0, 0.9511217, -0.14692113, 2.4200115, -0.45217678)
+[node name="pCube333" type="MeshInstance3D" parent="ChandelierController/group16"]
+transform = Transform3D(0.95112157, 0, -2.9272513, 0, 2.1326785, 0, 2.9272513, 0, 0.95112157, -0.14692113, 2.4200115, -0.45217678)
 material_override = SubResource("StandardMaterial3D_xjumx")
 mesh = SubResource("ArrayMesh_gxyo4")
 skeleton = NodePath("")
 
-[node name="pCylinder7" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4305114e-08, 3.273815, -1.9073486e-08)
+[node name="pCylinder7" type="MeshInstance3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4304533e-08, -7.226185, -1.907756e-08)
 material_override = SubResource("StandardMaterial3D_tgqs2")
 mesh = SubResource("ArrayMesh_tl3tu")
 skeleton = NodePath("")
 
-[node name="pCylinder8" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4305114e-08, 4.2835913, -1.9073486e-08)
+[node name="pCylinder8" type="MeshInstance3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4304533e-08, -6.2164083, -1.907756e-08)
 material_override = SubResource("StandardMaterial3D_3upx7")
 mesh = SubResource("ArrayMesh_7120m")
 skeleton = NodePath("")
 
-[node name="chain" type="Node3D" parent="."]
+[node name="chain" type="Node3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.499999, 0)
 
-[node name="pTorus3" type="MeshInstance3D" parent="chain"]
-transform = Transform3D(-1.5192434, 0, -2.6314065, 0, 3.0384867, 0, 2.6314065, 0, -1.5192434, -1.88079e-39, -16.909496, -3.8881048e-08)
+[node name="pTorus3" type="MeshInstance3D" parent="ChandelierController/chain"]
+transform = Transform3D(-1.5192434, 0, -2.6314065, 0, 3.0384872, 0, 2.6314065, 0, -1.5192434, 0, -16.909496, -3.8882717e-08)
 mesh = SubResource("ArrayMesh_gk2qf")
 skeleton = NodePath("")
 
-[node name="pTorus2" type="MeshInstance3D" parent="chain"]
-transform = Transform3D(-1.5192434, 0, 2.6314065, 0, 3.0384867, 0, -2.6314065, 0, -1.5192434, -5.172176e-39, -16.909496, -3.8881048e-08)
+[node name="pTorus2" type="MeshInstance3D" parent="ChandelierController/chain"]
+transform = Transform3D(-1.5192434, 0, 2.6314065, 0, 3.0384872, 0, -2.6314065, 0, -1.5192434, 0, -16.909496, -3.8882717e-08)
 mesh = SubResource("ArrayMesh_co412")
 skeleton = NodePath("")
 
-[node name="pTorus1" type="MeshInstance3D" parent="chain"]
-transform = Transform3D(3.0384867, 0, 0, 0, 3.0384867, 0, 0, 0, 3.0384867, 0, -16.909496, -3.8881048e-08)
+[node name="pTorus1" type="MeshInstance3D" parent="ChandelierController/chain"]
+transform = Transform3D(3.0384867, 0, 0, 0, 3.0384867, 0, 0, 0, 3.0384867, 0, -16.909496, -3.8882717e-08)
 mesh = SubResource("ArrayMesh_8mtbc")
 skeleton = NodePath("")
 
-[node name="chain2" type="Node3D" parent="chain"]
+[node name="chain2" type="Node3D" parent="ChandelierController/chain"]
 
-[node name="group19" type="Node3D" parent="chain/chain2"]
+[node name="group19" type="Node3D" parent="ChandelierController/chain/chain2"]
 
-[node name="group21" type="Node3D" parent="chain/chain2/group19"]
+[node name="group21" type="Node3D" parent="ChandelierController/chain/chain2/group19"]
 
-[node name="pTorus34" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus34" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2588406, 3.1787395, 0.00022130502)
 mesh = SubResource("ArrayMesh_bwixx")
 skeleton = NodePath("")
 
-[node name="pTorus32" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus32" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19512688, 3.2365024, 0.00034067867)
 mesh = SubResource("ArrayMesh_pnqe5")
 skeleton = NodePath("")
 
-[node name="pTorus31" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16327001, 3.265384, 0.00040036548)
+[node name="pTorus31" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16327001, 3.265384, 0.0004003655)
 mesh = SubResource("ArrayMesh_54vk5")
 skeleton = NodePath("")
 
-[node name="pTorus33" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus33" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22698374, 3.207621, 0.00028099184)
 mesh = SubResource("ArrayMesh_0i28j")
 skeleton = NodePath("")
 
-[node name="pTorus42" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus42" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29219618, 3.1500795, 0.0005197391)
 mesh = SubResource("ArrayMesh_40y0d")
 skeleton = NodePath("")
 
-[node name="pTorus52" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus52" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32405305, 3.121198, 0.00046005228)
 mesh = SubResource("ArrayMesh_slv4v")
 skeleton = NodePath("")
 
-[node name="pTorus232" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus232" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8974766, 2.6013324, -0.00061431044)
 mesh = SubResource("ArrayMesh_rw1lv")
 skeleton = NodePath("")
 
-[node name="pTorus242" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus242" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9293335, 2.5724509, -0.0006739973)
 mesh = SubResource("ArrayMesh_7xn3c")
 skeleton = NodePath("")
 
-[node name="pTorus222" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus222" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8656198, 2.6302137, -0.0005546236)
 mesh = SubResource("ArrayMesh_kax1h")
 skeleton = NodePath("")
 
-[node name="pTorus212" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus212" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8337629, 2.6590953, -0.00049493683)
 mesh = SubResource("ArrayMesh_bj14b")
 skeleton = NodePath("")
 
-[node name="pTorus192" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus192" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77004915, 2.7168581, -0.00037556316)
 mesh = SubResource("ArrayMesh_2geh7")
 skeleton = NodePath("")
 
-[node name="pTorus202" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus202" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80190605, 2.6879766, -0.00043525)
 mesh = SubResource("ArrayMesh_7atv5")
 skeleton = NodePath("")
 
-[node name="pTorus182" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus182" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7381923, 2.7457395, -0.00031587636)
 mesh = SubResource("ArrayMesh_n0wq5")
 skeleton = NodePath("")
 
-[node name="pTorus152" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus152" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6426217, 2.8323836, -0.0001368159)
 mesh = SubResource("ArrayMesh_g5hs7")
 skeleton = NodePath("")
 
-[node name="pTorus172" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus172" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7063354, 2.7746208, -0.00025618952)
 mesh = SubResource("ArrayMesh_igo6w")
 skeleton = NodePath("")
 
-[node name="pTorus162" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus162" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6744786, 2.8035023, -0.00019650272)
 mesh = SubResource("ArrayMesh_8lbyi")
 skeleton = NodePath("")
 
-[node name="pTorus142" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus142" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.61076486, 2.8612652, -7.712908e-05)
 mesh = SubResource("ArrayMesh_ealt1")
 skeleton = NodePath("")
 
-[node name="pTorus132" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus132" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.57890797, 2.8901465, -1.744226e-05)
 mesh = SubResource("ArrayMesh_57h6h")
 skeleton = NodePath("")
 
-[node name="pTorus122" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54705113, 2.919028, 4.224456e-05)
+[node name="pTorus122" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54705113, 2.919028, 4.2244545e-05)
 mesh = SubResource("ArrayMesh_7ao2j")
 skeleton = NodePath("")
 
-[node name="pTorus112" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus112" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51519424, 2.9479094, 0.00010193138)
 mesh = SubResource("ArrayMesh_520ii")
 skeleton = NodePath("")
 
-[node name="pTorus92" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus92" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4514805, 3.0056722, 0.00022130502)
 mesh = SubResource("ArrayMesh_j2opi")
 skeleton = NodePath("")
 
-[node name="pTorus102" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48333737, 2.976791, 0.0001616182)
+[node name="pTorus102" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48333737, 2.976791, 0.00016161821)
 mesh = SubResource("ArrayMesh_e8eys")
 skeleton = NodePath("")
 
-[node name="pTorus82" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
+[node name="pTorus82" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41962364, 3.0345538, 0.00028099184)
 mesh = SubResource("ArrayMesh_hknwy")
 skeleton = NodePath("")
 
-[node name="pTorus72" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38776678, 3.063435, 0.00034067864)
+[node name="pTorus72" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38776678, 3.063435, 0.00034067867)
 mesh = SubResource("ArrayMesh_6oiba")
 skeleton = NodePath("")
 
-[node name="pTorus62" type="MeshInstance3D" parent="chain/chain2/group19/group21"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3559099, 3.0923166, 0.00040036548)
+[node name="pTorus62" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group19/group21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3559099, 3.0923166, 0.0004003655)
 mesh = SubResource("ArrayMesh_8eyj6")
 skeleton = NodePath("")
 
-[node name="group20" type="Node3D" parent="chain/chain2"]
+[node name="group20" type="Node3D" parent="ChandelierController/chain/chain2"]
 
-[node name="pTorus7" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus7" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.086286, -0.0017653445)
 mesh = SubResource("ArrayMesh_mw6y1")
 skeleton = NodePath("")
 
-[node name="pTorus8" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus8" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.043286, -0.0017653445)
 mesh = SubResource("ArrayMesh_5feth")
 skeleton = NodePath("")
 
-[node name="pTorus24" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus24" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.355286, -0.0017653445)
 mesh = SubResource("ArrayMesh_tmjf4")
 skeleton = NodePath("")
 
-[node name="pTorus23" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus23" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.3982859, -0.0017653445)
 mesh = SubResource("ArrayMesh_12b0u")
 skeleton = NodePath("")
 
-[node name="pTorus22" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus22" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.4412858, -0.0017653445)
 mesh = SubResource("ArrayMesh_mvgws")
 skeleton = NodePath("")
 
-[node name="pTorus9" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus9" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.000286, -0.0017653445)
 mesh = SubResource("ArrayMesh_oh3np")
 skeleton = NodePath("")
 
-[node name="pTorus10" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus10" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.957286, -0.0017653445)
 mesh = SubResource("ArrayMesh_g8oao")
 skeleton = NodePath("")
 
-[node name="pTorus25" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus25" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00319976, 3.3311443, 0.00013582122)
 mesh = SubResource("ArrayMesh_dek7c")
 skeleton = NodePath("")
 
-[node name="pTorus27" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus27" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0049720383, 3.2759209, 0.0011994577)
 mesh = SubResource("ArrayMesh_dcl4c")
 skeleton = NodePath("")
 
-[node name="pTorus26" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus26" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0049720383, 3.2759209, 0.0011994577)
 mesh = SubResource("ArrayMesh_2e5ff")
 skeleton = NodePath("")
 
-[node name="pTorus6" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus6" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.129286, -0.0017653445)
 mesh = SubResource("ArrayMesh_k524h")
 skeleton = NodePath("")
 
-[node name="pTorus5" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus5" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.172286, -0.0017653445)
 mesh = SubResource("ArrayMesh_ge2ks")
 skeleton = NodePath("")
 
-[node name="pTorus28" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus28" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0049720383, 3.2759209, 0.0011994577)
 mesh = SubResource("ArrayMesh_b735g")
 skeleton = NodePath("")
 
-[node name="pTorus20" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus20" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.5272858, -0.0017653445)
 mesh = SubResource("ArrayMesh_0dijb")
 skeleton = NodePath("")
 
-[node name="pTorus19" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus19" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.5702858, -0.0017653445)
 mesh = SubResource("ArrayMesh_tldav")
 skeleton = NodePath("")
 
-[node name="pTorus21" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus21" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.4842858, -0.0017653445)
 mesh = SubResource("ArrayMesh_x13yh")
 skeleton = NodePath("")
 
-[node name="pTorus12" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus12" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.871286, -0.0017653445)
 mesh = SubResource("ArrayMesh_wwm5s")
 skeleton = NodePath("")
 
-[node name="pTorus11" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus11" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.914286, -0.0017653445)
 mesh = SubResource("ArrayMesh_1k2q5")
 skeleton = NodePath("")
 
-[node name="pTorus16" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus16" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.699286, -0.0017653445)
 mesh = SubResource("ArrayMesh_m4uv8")
 skeleton = NodePath("")
 
-[node name="pTorus15" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus15" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.742286, -0.0017653445)
 mesh = SubResource("ArrayMesh_ngdbk")
 skeleton = NodePath("")
 
-[node name="pTorus18" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus18" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.613286, -0.0017653445)
 mesh = SubResource("ArrayMesh_3bhab")
 skeleton = NodePath("")
 
-[node name="pTorus17" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus17" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.656286, -0.0017653445)
 mesh = SubResource("ArrayMesh_vwekd")
 skeleton = NodePath("")
 
-[node name="pTorus4" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus4" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 4.215286, -0.0017653445)
 mesh = SubResource("ArrayMesh_51rbv")
 skeleton = NodePath("")
 
-[node name="pTorus13" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus13" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.828286, -0.0017653445)
 mesh = SubResource("ArrayMesh_0qn72")
 skeleton = NodePath("")
 
-[node name="pTorus14" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus14" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000234946, 3.785286, -0.0017653445)
 mesh = SubResource("ArrayMesh_r0d4l")
 skeleton = NodePath("")
 
-[node name="pTorus35" type="MeshInstance3D" parent="chain/chain2/group20"]
+[node name="pTorus35" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group20"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00319976, 4.2397747, 0.00013582122)
 mesh = SubResource("ArrayMesh_rgrk5")
 skeleton = NodePath("")
 
-[node name="group22" type="Node3D" parent="chain/chain2"]
+[node name="group22" type="Node3D" parent="ChandelierController/chain/chain2"]
 
-[node name="group212" type="Node3D" parent="chain/chain2/group22"]
+[node name="group212" type="Node3D" parent="ChandelierController/chain/chain2/group22"]
 
-[node name="pTorus342" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus342" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12916185, 3.1787395, -0.22438888)
 mesh = SubResource("ArrayMesh_jfxn3")
 skeleton = NodePath("")
 
-[node name="pTorus322" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus322" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09720161, 3.2365024, -0.16927086)
 mesh = SubResource("ArrayMesh_8k067")
 skeleton = NodePath("")
 
-[node name="pTorus312" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus312" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08122148, 3.265384, -0.14171185)
 mesh = SubResource("ArrayMesh_us3fg")
 skeleton = NodePath("")
 
-[node name="pTorus332" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus332" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.113181725, 3.207621, -0.19682987)
 mesh = SubResource("ArrayMesh_buvdr")
 skeleton = NodePath("")
 
-[node name="pTorus43" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus43" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14558119, 3.1500795, -0.25342488)
 mesh = SubResource("ArrayMesh_cwuq1")
 skeleton = NodePath("")
 
-[node name="pTorus53" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus53" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16156131, 3.121198, -0.2809839)
 mesh = SubResource("ArrayMesh_c6y82")
 skeleton = NodePath("")
 
-[node name="pTorus233" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus233" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44920352, 2.6013324, -0.7770461)
 mesh = SubResource("ArrayMesh_7u2mf")
 skeleton = NodePath("")
 
-[node name="pTorus243" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus243" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46518365, 2.5724509, -0.8046051)
 mesh = SubResource("ArrayMesh_l434x")
 skeleton = NodePath("")
 
-[node name="pTorus223" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus223" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4332234, 2.6302137, -0.7494871)
 mesh = SubResource("ArrayMesh_w0gfb")
 skeleton = NodePath("")
 
-[node name="pTorus213" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus213" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.41724327, 2.6590953, -0.72192806)
 mesh = SubResource("ArrayMesh_wmmnm")
 skeleton = NodePath("")
 
-[node name="pTorus193" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus193" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38528302, 2.7168581, -0.66681004)
 mesh = SubResource("ArrayMesh_w3s14")
 skeleton = NodePath("")
 
-[node name="pTorus203" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus203" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40126315, 2.6879766, -0.6943691)
 mesh = SubResource("ArrayMesh_3awjb")
 skeleton = NodePath("")
 
-[node name="pTorus183" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus183" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3693029, 2.7457395, -0.63925105)
 mesh = SubResource("ArrayMesh_v8im6")
 skeleton = NodePath("")
 
-[node name="pTorus153" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus153" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.32136256, 2.8323836, -0.556574)
 mesh = SubResource("ArrayMesh_tmy1b")
 skeleton = NodePath("")
 
-[node name="pTorus173" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus173" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35332277, 2.7746208, -0.611692)
 mesh = SubResource("ArrayMesh_d5p1l")
 skeleton = NodePath("")
 
-[node name="pTorus163" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus163" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33734268, 2.8035023, -0.584133)
 mesh = SubResource("ArrayMesh_lxrdy")
 skeleton = NodePath("")
 
-[node name="pTorus143" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus143" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30538243, 2.8612652, -0.529015)
 mesh = SubResource("ArrayMesh_wrne6")
 skeleton = NodePath("")
 
-[node name="pTorus133" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus133" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2894023, 2.8901465, -0.50145596)
 mesh = SubResource("ArrayMesh_mk1ph")
 skeleton = NodePath("")
 
-[node name="pTorus123" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus123" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27342218, 2.919028, -0.47389698)
 mesh = SubResource("ArrayMesh_1lpyf")
 skeleton = NodePath("")
 
-[node name="pTorus113" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus113" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25744206, 2.9479094, -0.44633797)
 mesh = SubResource("ArrayMesh_v38n7")
 skeleton = NodePath("")
 
-[node name="pTorus93" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus93" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22548181, 3.0056722, -0.39121994)
 mesh = SubResource("ArrayMesh_gi68c")
 skeleton = NodePath("")
 
-[node name="pTorus103" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus103" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24146193, 2.976791, -0.41877896)
 mesh = SubResource("ArrayMesh_2ovcw")
 skeleton = NodePath("")
 
-[node name="pTorus83" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus83" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20950168, 3.0345538, -0.36366093)
 mesh = SubResource("ArrayMesh_eqyi6")
 skeleton = NodePath("")
 
-[node name="pTorus73" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus73" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19352156, 3.063435, -0.33610192)
 mesh = SubResource("ArrayMesh_qpeeg")
 skeleton = NodePath("")
 
-[node name="pTorus63" type="MeshInstance3D" parent="chain/chain2/group22/group212"]
+[node name="pTorus63" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group22/group212"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17754143, 3.0923166, -0.3085429)
 mesh = SubResource("ArrayMesh_v6i7v")
 skeleton = NodePath("")
 
-[node name="group23" type="Node3D" parent="chain/chain2"]
+[node name="group23" type="Node3D" parent="ChandelierController/chain/chain2"]
 
-[node name="group213" type="Node3D" parent="chain/chain2/group23"]
+[node name="group213" type="Node3D" parent="ChandelierController/chain/chain2/group23"]
 
-[node name="pTorus343" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus343" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12967876, 3.1787395, 0.22393619)
 mesh = SubResource("ArrayMesh_kxquq")
 skeleton = NodePath("")
 
-[node name="pTorus323" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus323" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09792527, 3.2365024, 0.1686988)
 mesh = SubResource("ArrayMesh_rdy2f")
 skeleton = NodePath("")
 
-[node name="pTorus313" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus313" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08204853, 3.265384, 0.1410801)
 mesh = SubResource("ArrayMesh_x6ynr")
 skeleton = NodePath("")
 
-[node name="pTorus333" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus333" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11380201, 3.207621, 0.1963175)
 mesh = SubResource("ArrayMesh_irt5d")
 skeleton = NodePath("")
 
-[node name="pTorus44" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus44" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.146615, 3.1500795, 0.25267375)
 mesh = SubResource("ArrayMesh_b77rd")
 skeleton = NodePath("")
 
-[node name="pTorus54" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus54" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16249174, 3.121198, 0.28029245)
 mesh = SubResource("ArrayMesh_c6g02")
 skeleton = NodePath("")
 
-[node name="pTorus234" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus234" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4482731, 2.6013324, 0.77742904)
 mesh = SubResource("ArrayMesh_bsj33")
 skeleton = NodePath("")
 
-[node name="pTorus244" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus244" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46414983, 2.5724509, 0.8050477)
 mesh = SubResource("ArrayMesh_43n4b")
 skeleton = NodePath("")
 
-[node name="pTorus224" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus224" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43239635, 2.6302137, 0.74981034)
 mesh = SubResource("ArrayMesh_gsqj3")
 skeleton = NodePath("")
 
-[node name="pTorus214" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus214" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4165196, 2.6590953, 0.72219163)
 mesh = SubResource("ArrayMesh_32142")
 skeleton = NodePath("")
 
-[node name="pTorus194" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus194" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38476613, 2.7168581, 0.6669542)
 mesh = SubResource("ArrayMesh_sr5sl")
 skeleton = NodePath("")
 
-[node name="pTorus204" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus204" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40064287, 2.6879766, 0.6945729)
 mesh = SubResource("ArrayMesh_sipgn")
 skeleton = NodePath("")
 
-[node name="pTorus184" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus184" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3688894, 2.7457395, 0.6393355)
 mesh = SubResource("ArrayMesh_o4f0e")
 skeleton = NodePath("")
 
-[node name="pTorus154" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus154" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.32125917, 2.8323836, 0.55647945)
 mesh = SubResource("ArrayMesh_x2lfa")
 skeleton = NodePath("")
 
-[node name="pTorus174" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus174" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35301265, 2.7746208, 0.6117168)
 mesh = SubResource("ArrayMesh_e7sm8")
 skeleton = NodePath("")
 
-[node name="pTorus164" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus164" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3371359, 2.8035023, 0.58409816)
 mesh = SubResource("ArrayMesh_sh7ep")
 skeleton = NodePath("")
 
-[node name="pTorus144" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus144" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30538243, 2.8612652, 0.52886075)
 mesh = SubResource("ArrayMesh_7xike")
 skeleton = NodePath("")
 
-[node name="pTorus134" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus134" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2895057, 2.8901465, 0.50124204)
 mesh = SubResource("ArrayMesh_8jaun")
 skeleton = NodePath("")
 
-[node name="pTorus124" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus124" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27362892, 2.919028, 0.47362334)
 mesh = SubResource("ArrayMesh_m34uu")
 skeleton = NodePath("")
 
-[node name="pTorus114" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus114" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25775218, 2.9479094, 0.44600463)
 mesh = SubResource("ArrayMesh_sbxhj")
 skeleton = NodePath("")
 
-[node name="pTorus94" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus94" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22599871, 3.0056722, 0.39076725)
 mesh = SubResource("ArrayMesh_0an74")
 skeleton = NodePath("")
 
-[node name="pTorus104" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus104" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24187545, 2.976791, 0.41838595)
 mesh = SubResource("ArrayMesh_nggyg")
 skeleton = NodePath("")
 
-[node name="pTorus84" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus84" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21012196, 3.0345538, 0.36314854)
 mesh = SubResource("ArrayMesh_orc0g")
 skeleton = NodePath("")
 
-[node name="pTorus74" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus74" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19424522, 3.063435, 0.33552986)
 mesh = SubResource("ArrayMesh_prwnq")
 skeleton = NodePath("")
 
-[node name="pTorus64" type="MeshInstance3D" parent="chain/chain2/group23/group213"]
+[node name="pTorus64" type="MeshInstance3D" parent="ChandelierController/chain/chain2/group23/group213"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17836848, 3.0923166, 0.30791116)
 mesh = SubResource("ArrayMesh_wgulf")
 skeleton = NodePath("")
 
-[node name="group24" type="Node3D" parent="."]
+[node name="group24" type="Node3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.499999, 0)
 
-[node name="candlestick1" type="MeshInstance3D" parent="group24"]
+[node name="candlestick1" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_5hmco")
 mesh = SubResource("ArrayMesh_g4bg0")
 skeleton = NodePath("")
 
-[node name="candlestick2" type="MeshInstance3D" parent="group24"]
+[node name="candlestick2" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_mx2d7")
 mesh = SubResource("ArrayMesh_7fbq4")
 skeleton = NodePath("")
 
-[node name="candlestick3" type="MeshInstance3D" parent="group24"]
+[node name="candlestick3" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_xvy06")
 mesh = SubResource("ArrayMesh_cja00")
 skeleton = NodePath("")
 
-[node name="candlestick4" type="MeshInstance3D" parent="group24"]
+[node name="candlestick4" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_1s7h4")
 mesh = SubResource("ArrayMesh_wkbt7")
 skeleton = NodePath("")
 
-[node name="candlestick5" type="MeshInstance3D" parent="group24"]
+[node name="candlestick5" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_o61xg")
 mesh = SubResource("ArrayMesh_1sjsl")
 skeleton = NodePath("")
 
-[node name="candlestick6" type="MeshInstance3D" parent="group24"]
+[node name="candlestick6" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_l4xiu")
 mesh = SubResource("ArrayMesh_fphpd")
 skeleton = NodePath("")
 
-[node name="candlestick7" type="MeshInstance3D" parent="group24"]
+[node name="candlestick7" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_kg74s")
 mesh = SubResource("ArrayMesh_g61n7")
 skeleton = NodePath("")
 
-[node name="candlestick8" type="MeshInstance3D" parent="group24"]
+[node name="candlestick8" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_5xtux")
 mesh = SubResource("ArrayMesh_2r3ve")
 skeleton = NodePath("")
 
-[node name="candlestick9" type="MeshInstance3D" parent="group24"]
+[node name="candlestick9" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_q2epp")
 mesh = SubResource("ArrayMesh_vv648")
 skeleton = NodePath("")
 
-[node name="candlestick10" type="MeshInstance3D" parent="group24"]
+[node name="candlestick10" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_njhmj")
 mesh = SubResource("ArrayMesh_r0biw")
 skeleton = NodePath("")
 
-[node name="candlestick11" type="MeshInstance3D" parent="group24"]
+[node name="candlestick11" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_5nail")
 mesh = SubResource("ArrayMesh_7wiuv")
 skeleton = NodePath("")
 
-[node name="candlestick12" type="MeshInstance3D" parent="group24"]
+[node name="candlestick12" type="MeshInstance3D" parent="ChandelierController/group24"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6435938, 0)
 material_override = SubResource("StandardMaterial3D_m6510")
 mesh = SubResource("ArrayMesh_4sj3o")
 skeleton = NodePath("")
 
-[node name="lights" type="Node3D" parent="group24"]
+[node name="lights" type="Node3D" parent="ChandelierController/group24"]
 
-[node name="SpotLight3D3" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.68000007, 3.0435936, -0.62)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
+[node name="OmniLight3D" type="OmniLight3D" parent="ChandelierController/group24/lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1999998, 0)
+light_color = Color(0.15129802, 0.4118666, 0.74230534, 1)
+light_energy = 4.5
+light_indirect_energy = 2.5
+light_volumetric_fog_energy = 2.5
+light_size = 10.0
+omni_range = 9.0
 
-[node name="SpotLight3D4" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.6399999, 3.0435936, -0.66)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
+[node name="group25" type="Node3D" parent="ChandelierController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.499999, 0)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.2, 3.0435936, -0.9)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.28000003, 3.0435936, -0.88)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D5" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.68, 3.0435936, 0.6100001)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D9" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.88, 3.0435936, 0.21000007)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D10" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, -0.88, 3.0435936, 0.29000008)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D11" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.88, 3.0435936, -0.26999992)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D12" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, -0.88, 3.0435936, -0.18999992)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D6" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, -0.64, 3.0435936, 0.65000015)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D7" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, -0.20000008, 3.0435936, 0.89000005)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="SpotLight3D8" type="SpotLight3D" parent="group24/lights"]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.27999994, 3.0435936, 0.87000006)
-light_color = Color(3.236, 1.927, 1.401, 1)
-distance_fade_enabled = true
-spot_range = 5.282
-spot_angle = 102.09
-
-[node name="group25" type="Node3D" parent="."]
-
-[node name="pCylinder9" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder9" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_2e1qu")
 skeleton = NodePath("")
 
-[node name="pCylinder10" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder10" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_mvgbs")
 skeleton = NodePath("")
 
-[node name="pCylinder11" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder11" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_2e0bf")
 skeleton = NodePath("")
 
-[node name="pCylinder12" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder12" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_pbtsd")
 skeleton = NodePath("")
 
-[node name="pCylinder13" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder13" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_pcox3")
 skeleton = NodePath("")
 
-[node name="pCylinder14" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder14" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_s1tly")
 skeleton = NodePath("")
 
-[node name="pCylinder15" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder15" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_1f548")
 skeleton = NodePath("")
 
-[node name="pCylinder16" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder16" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_5n7hh")
 skeleton = NodePath("")
 
-[node name="pCylinder17" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder17" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_fiyeo")
 skeleton = NodePath("")
 
-[node name="pCylinder18" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder18" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_c8jsf")
 skeleton = NodePath("")
 
-[node name="pCylinder19" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder19" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_wm3pd")
 skeleton = NodePath("")
 
-[node name="pCylinder20" type="MeshInstance3D" parent="group25"]
+[node name="pCylinder20" type="MeshInstance3D" parent="ChandelierController/group25"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8626108, 0)
 mesh = SubResource("ArrayMesh_0ig4q")
 skeleton = NodePath("")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_v33vy")
-}

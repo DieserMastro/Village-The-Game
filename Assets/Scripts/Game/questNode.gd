@@ -1,7 +1,7 @@
 extends Node
 class_name Quest;
 
-var qm: QuestManager = QuestManager;
+var qm: Node;
 
 @export_group("Quest Details")
 @export var UNIQUE_ID: int;
@@ -28,6 +28,7 @@ enum QUEST_STATUS {
 func _ready() -> void:
 	updateQuestProgress.connect(_update_Quest_Progress);
 	updateQuestStatus.connect(_update_Quest_Status);
+	qm = get_parent();
 
 func _update_Quest_Progress(args):
 	pass
@@ -39,7 +40,7 @@ func _start_Quest():
 	pass
 
 func setQuestStatus(status: QUEST_STATUS):
-	prints("Status changed to: ", status);
+	prints("Quest Status changed to: ", status);
 	currentStatus = status;
 	changeQuestStatus();
 
@@ -48,7 +49,7 @@ func changeQuestStatus():
 		QUEST_STATUS.ONGOING:
 			acceptQuest();
 		QUEST_STATUS.FINISHED:
-			setCanComplete();
+			questFinished();
 		QUEST_STATUS.COMPLETED:
 			completeQuest();
 		QUEST_STATUS.REPEAT:
@@ -60,7 +61,7 @@ func changeQuestStatus():
 func acceptQuest():
 	pass
 
-func setCanComplete():
+func questFinished():
 	pass
 
 func completeQuest():
