@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://f5jsdn87vjl5"]
+
+[ext_resource type="PackedScene" uid="uid://p30vb07ita1u" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/glowing_skull.tscn" id="1_5s5fq"]
+[ext_resource type="Script" uid="uid://dphykryugira6" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_pickupable.gd" id="1_gb1fg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5s5fq"]
+radius = 0.4
+
+[node name="skull_Pickupable" type="StaticBody3D"]
+script = ExtResource("1_gb1fg")
+isPickupable = true
+prompt_message = "Pick Up"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("SphereShape3D_5s5fq")
+
+[node name="Glowing_Skull" parent="." instance=ExtResource("1_5s5fq")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[connection signal="triggerInteraction" from="." to="." method="_on_trigger_interaction"]

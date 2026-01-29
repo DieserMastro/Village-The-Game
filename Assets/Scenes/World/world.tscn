@@ -1,11 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://dv04quyg11skf"]
+[gd_scene load_steps=29 format=3 uid="uid://dv04quyg11skf"]
 
 [ext_resource type="Material" uid="uid://bo2vckh7oyrkv" path="res://Assets/Texture/Ground103_1K-PNG/Ground103_1K-PNG.tres" id="1_7rdkw"]
 [ext_resource type="Material" uid="uid://cnjqd7dypkbql" path="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG.tres" id="1_ahn5v"]
 [ext_resource type="Material" uid="uid://cnwlywrh5wmnf" path="res://Assets/Texture/Ground048_1K-PNG/Ground048_1K-PNG.tres" id="2_045r4"]
 [ext_resource type="PackedScene" uid="uid://kp2ihu2i8vxn" path="res://Assets/Scenes/World/building.tscn" id="2_x217c"]
+[ext_resource type="Script" uid="uid://2wfot3kio3pr" path="res://Assets/Scenes/World/patch_of_grass.gd" id="3_8c2if"]
 [ext_resource type="ArrayMesh" uid="uid://ca8l31f5684wb" path="res://Assets/Imports/grass/reimport/Mesh.res" id="3_045r4"]
 [ext_resource type="PackedScene" uid="uid://b3u36ff3xf5pi" path="res://Assets/Scenes/Player/Player.tscn" id="3_ahn5v"]
+[ext_resource type="FastNoiseLite" uid="uid://n7m5jql5qaaq" path="res://Assets/Imports/grass/reimport/grass_Noise.tres" id="4_6kgtb"]
+[ext_resource type="PackedScene" uid="uid://r6oose4x16me" path="res://Assets/Imports/cool stuff/scarecrow_gltf/scarecrow.gltf" id="9_g858l"]
+[ext_resource type="PackedScene" uid="uid://p30vb07ita1u" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/glowing_skull.tscn" id="10_pb8os"]
+[ext_resource type="PackedScene" uid="uid://j8lcam8eeiqh" path="res://Assets/Imports/Nature/glTF/DeadTree_6.gltf" id="12_7k4vd"]
+[ext_resource type="PackedScene" uid="uid://dnc4v6xvvomuu" path="res://Assets/Imports/Nature/glTF/DeadTree_7.gltf" id="13_y1wgp"]
+[ext_resource type="PackedScene" uid="uid://lgvkbu8mawim" path="res://Assets/Imports/Nature/glTF/DeadTree_5.gltf" id="14_tlyw5"]
+[ext_resource type="PackedScene" uid="uid://cml57usd2on5f" path="res://Assets/Imports/Nature/glTF/DeadTree_4.gltf" id="15_hw8x4"]
+[ext_resource type="PackedScene" uid="uid://daaimxcbihgbm" path="res://Assets/Imports/Nature/glTF/DeadTree_3.gltf" id="16_uri15"]
+[ext_resource type="PackedScene" uid="uid://d140w4xgaeocy" path="res://Assets/Imports/Nature/glTF/DeadTree_2.gltf" id="17_7vwu5"]
+[ext_resource type="PackedScene" uid="uid://du1bagowojwnq" path="res://Assets/Imports/Nature/glTF/DeadTree_1.gltf" id="18_iqhca"]
+[ext_resource type="PackedScene" uid="uid://ca8vs178321si" path="res://Assets/Imports/Nature/glTF/DeadTree_10.gltf" id="19_02jbm"]
+[ext_resource type="Texture2D" uid="uid://v4q503etdoar" path="res://Assets/Imports/Textures/skybox/Panorama/Panorama_Sky_11-512x512.png" id="20_0cukx"]
+[ext_resource type="PackedScene" uid="uid://bm626yb4rp0dv" path="res://Assets/Imports/cool stuff/knight/zesty_knight.tscn" id="20_7k4vd"]
+[ext_resource type="PackedScene" uid="uid://f5jsdn87vjl5" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_pickupable.tscn" id="21_y1wgp"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bvknm"]
 
@@ -23,6 +38,24 @@ buffer = PackedFloat32Array(-0.7063594, 0.1613592, -0.60275376, 5.5132675, -0.23
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8c2if"]
 
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4hu1r"]
+panorama = ExtResource("20_0cukx")
+
+[sub_resource type="Sky" id="Sky_3xtm5"]
+sky_material = SubResource("PanoramaSkyMaterial_4hu1r")
+process_mode = 1
+radiance_size = 6
+
+[sub_resource type="Environment" id="Environment_ukrrg"]
+background_mode = 2
+background_energy_multiplier = 1.71
+sky = SubResource("Sky_3xtm5")
+sky_rotation = Vector3(3.1415927, 4.1887903, 0)
+ambient_light_color = Color(0.58431375, 0, 0, 1)
+ambient_light_energy = 1.05
+volumetric_fog_enabled = true
+volumetric_fog_emission = Color(0.4390491, 0.43904912, 0.43904912, 1)
+
 [node name="World" type="Node3D"]
 
 [node name="floor" type="StaticBody3D" parent="."]
@@ -32,47 +65,99 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.2000027)
 shape = SubResource("WorldBoundaryShape3D_bvknm")
 
 [node name="dirtPlane" type="MeshInstance3D" parent="floor"]
-transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 14, 3.4, 0.01, -18.800001)
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 10.080001, 3.4, 0.01, -29.400003)
 material_override = ExtResource("2_045r4")
 mesh = SubResource("PlaneMesh_7rdkw")
 
 [node name="patchOfGrass" type="Node3D" parent="floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.8000002)
+script = ExtResource("3_8c2if")
+grass_Noise = ExtResource("4_6kgtb")
+frequencyRange = 0.06
+effectSpeed = 0.001
 
 [node name="grassMulti" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.400001, 0, 0)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti2" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.400001, 0, -10.4)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti3" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.400001, 0, -21)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti4" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.800001, 0, -30.999998)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti9" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2, 0, 0)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti10" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2, 0, -10.399999)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti11" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2, 0, -21)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti12" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 0, -30.999996)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti5" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5999994, 0, 0)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti6" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5999994, 0, -10.4)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti7" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5999994, 0, -21)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="grassMulti8" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.199999, 0, -30.999998)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti13" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.599999, 0, 0)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti14" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.599999, 0, -10.399999)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti15" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.599999, 0, -21)
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_vfpse")
+
+[node name="grassMulti16" type="MultiMeshInstance3D" parent="floor/patchOfGrass"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.199999, 0, -30.999996)
+cast_shadow = 0
 multimesh = SubResource("MultiMesh_vfpse")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
-transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 60, 0, 0, -43.800003)
+transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 48, 0, 0, -43.800003)
 mesh = SubResource("PlaneMesh_8c2if")
 surface_material_override/0 = ExtResource("1_ahn5v")
 
@@ -80,13 +165,67 @@ surface_material_override/0 = ExtResource("1_ahn5v")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.403506, 0.010405526, -62.157837)
 
 [node name="Player" parent="." instance=ExtResource("3_ahn5v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 0, -20.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 1.2, -64)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 0, 0)
-light_color = Color(0.52922505, 0.22514626, 0.064628504, 1)
+light_color = Color(0.29411766, 0.11372549, 0.019607844, 1)
+light_energy = 5.966
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 2.655
+light_specular = 2.0
 light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_opacity = 0.41
 shadow_blur = 2.293
+
+[node name="Glowing_Skull" parent="." instance=ExtResource("10_pb8os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2000003, 1, -58.400005)
+
+[node name="Glowing_Skull2" parent="." instance=ExtResource("10_pb8os")]
+transform = Transform3D(0.34641016, 0, 0.2, 0, 0.4, 0, -0.2, 0, 0.34641016, 8.400001, 1.78, -68)
+
+[node name="world_Props" type="Node3D" parent="."]
+
+[node name="DeadTree_62" parent="world_Props" instance=ExtResource("12_7k4vd")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -12.4, 0, -53)
+
+[node name="DeadTree_72" parent="world_Props" instance=ExtResource("13_y1wgp")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18.599998, 0, -53.4)
+
+[node name="DeadTree_52" parent="world_Props" instance=ExtResource("14_tlyw5")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.2, 0, -54.2)
+
+[node name="DeadTree_42" parent="world_Props" instance=ExtResource("15_hw8x4")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8, 0, -41.4)
+
+[node name="DeadTree_32" parent="world_Props" instance=ExtResource("16_uri15")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 17, 0, -31.600002)
+
+[node name="DeadTree_22" parent="world_Props" instance=ExtResource("17_7vwu5")]
+transform = Transform3D(2.598076, 0, 1.5, 0, 3, 0, -1.5, 0, 2.598076, -12, 0, -26.8)
+
+[node name="DeadTree_12" parent="world_Props" instance=ExtResource("18_iqhca")]
+transform = Transform3D(1.4999999, 0, -2.5980763, 0, 3, 0, 2.5980763, 0, 1.4999999, 22, 0, -19.800001)
+
+[node name="DeadTree_102" parent="world_Props" instance=ExtResource("19_02jbm")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.3999996, 0, -16.6)
+
+[node name="scareCrow" parent="world_Props" instance=ExtResource("9_g858l")]
+transform = Transform3D(0.74999994, 0, -1.2990382, 0, 1.5, 0, 1.2990382, 0, 0.74999994, 10.6, 0.4, -41.2)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ukrrg")
+
+[node name="zestyKnight" parent="." node_paths=PackedStringArray("playerRef") instance=ExtResource("20_7k4vd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.06, 4.2, -65.54)
+playerRef = NodePath("../Player")
+range = 0.03
+speed = 0.02
+
+[node name="skull_Pickupable" parent="." instance=ExtResource("21_y1wgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4674737, 5.1589146, -65.71315)
+
+[node name="skull_Pickupable2" parent="." instance=ExtResource("21_y1wgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -63)

@@ -27,6 +27,7 @@ var direction: Vector3 = Vector3(0,0,0);
 @onready var raycast: RayCast3D = get_node("cameraGimbal/head/RayCast3D");
 var canInteract: bool = false;
 
+signal broadCastPos
 
 func _ready() -> void:
 	raycast.add_exception(self);
@@ -64,6 +65,8 @@ func _physics_process(delta: float) -> void:
 		
 	move_and_slide()
 	
+	broadCastPos.emit(position);
+	
 func _unhandled_input(event):
 	##Mouse movement
 	if event is InputEventMouseMotion:
@@ -71,7 +74,7 @@ func _unhandled_input(event):
 		rotation_degrees.y -= event.screen_relative.x * camera_sensitivity; 
 		##vertical; turns only camera
 		cameraGimbal.rotation_degrees.x -= event.screen_relative.y * camera_sensitivity;
-		cameraGimbal.rotation_degrees.x = clamp(cameraGimbal.rotation_degrees.x, -30.0, 20.0);
+		cameraGimbal.rotation_degrees.x = clamp(cameraGimbal.rotation_degrees.x, -50.0, 50.0);
 		
 	
 	if event is InputEventKey:
@@ -108,3 +111,5 @@ func _on_dash_cooldown_timeout() -> void:
 func _on_dash_duration_timeout() -> void:
 	isDashing = false;
 	
+func _getPos() -> Vector3:
+	return position;

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://db20u4owrygdr"]
+[gd_scene load_steps=5 format=3 uid="uid://db20u4owrygdr"]
 
 [ext_resource type="Script" uid="uid://cq6aydqejncbx" path="res://Assets/Scripts/Menu/MainMenu.gd" id="1_dvmkf"]
 [ext_resource type="FontFile" uid="uid://c8s6bb0hhh008" path="res://Assets/Fonts/nexa-rust/NexaRustHandmade-Extended.otf" id="1_q0tfb"]
 [ext_resource type="Theme" uid="uid://bxn7g65qx5rk1" path="res://Assets/Themes/MenuTheme.tres" id="2_dvmkf"]
+[ext_resource type="PackedScene" uid="uid://dv04quyg11skf" path="res://Assets/Scenes/World/world.tscn" id="2_u7rcv"]
 
 [node name="MainMenuGUI" type="CanvasLayer"]
 script = ExtResource("1_dvmkf")
@@ -26,9 +27,12 @@ size = Vector2i(1920, 1280)
 render_target_update_mode = 4
 
 [node name="CameraGimbal" type="Node3D" parent="Background/SubViewportContainer/SubViewport"]
+transform = Transform3D(0.9960738, 0.039082486, -0.07943237, -0.022931023, 0.9805544, 0.19490245, 0.085504994, -0.19231564, 0.9776007, 3.6000001, 0, -35.2)
 
 [node name="Camera3D" type="Camera3D" parent="Background/SubViewportContainer/SubViewport/CameraGimbal"]
 transform = Transform3D(0.90630776, 0.036833607, -0.4210101, 0, 0.9961947, 0.087155744, 0.42261827, -0.07898992, 0.90285903, -5.4, 8.4, 11)
+
+[node name="World" parent="Background" instance=ExtResource("2_u7rcv")]
 
 [node name="Menu" type="Control" parent="."]
 layout_mode = 3
@@ -46,9 +50,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 200
-theme_override_constants/margin_right = 100
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 300
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Menu/MarginContainer"]
 layout_mode = 2
@@ -58,6 +62,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
 theme = ExtResource("2_dvmkf")
+theme_override_colors/font_color = Color(0.6745098, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.19607843)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 18
@@ -65,7 +70,7 @@ theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("1_q0tfb")
 theme_override_font_sizes/font_size = 164
-text = "Village The Game"
+text = "Hauntparty"
 horizontal_alignment = 1
 vertical_alignment = 1
 

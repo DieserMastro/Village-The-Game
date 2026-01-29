@@ -274,7 +274,7 @@ transform = Transform3D(1, 3.0361612e-08, 2.6563072e-09, -3.0361612e-08, 0.98480
 transform = Transform3D(1, 3.0361612e-08, 2.6563087e-09, -2.593998e-08, 0.8021232, 0.5971587, 1.6000037e-08, -0.5971587, 0.8021232, -1.1199946, 7.499999, 3.7199998)
 
 [node name="Prop_Vine65" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("9_lrlvq")]
-transform = Transform3D(1, 3.0361612e-08, 2.6563087e-09, -2.593998e-08, 0.8021232, 0.5971587, 1.6000037e-08, -0.5971587, 0.8021232, -7.119995, 7.499999, 3.7199988)
+transform = Transform3D(1, 3.0361612e-08, 2.6563083e-09, -2.1550903e-08, 0.6427876, 0.76604444, 2.1550923e-08, -0.76604444, 0.6427876, -7.119995, 7.5999985, 3.7199988)
 
 [node name="Roof_Wooden_2x1_R2" parent="Building_Test/Foundation/Balcony/roof" instance=ExtResource("10_qkvtk")]
 transform = Transform3D(1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.2, 3.8, 6.3199997, 3.6999993)

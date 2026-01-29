@@ -18,8 +18,10 @@ length = 0.5
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_0ljjw")
+speed = 3.5
+runModif = 3.0
 dash_Force = 50.0
-camera_sensitivity = 0.4
+camera_sensitivity = 0.2
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
@@ -38,9 +40,8 @@ transform = Transform3D(1, 0, 0, 0, 0.98480767, 0.17364816, 0, -0.17364816, 0.98
 transform = Transform3D(1, 0, 0, 0, 0.98480785, -0.17364818, 0, 0.17364818, 0.98480785, 0, 0.09848082, 0.01736483)
 
 [node name="RayCast3D" type="RayCast3D" parent="cameraGimbal/head"]
-transform = Transform3D(-25, 0, -3.774895e-07, 0, 25, 0, 3.774895e-06, 0, -2.5, 0, 0, -2.6)
+transform = Transform3D(1, 1.3026994e-15, 7.152556e-07, 5.802726e-15, 1, -8.940695e-08, -2.3841855e-07, 2.9802317e-08, 3, 0, 0, 2.3469329e-07)
 target_position = Vector3(0, 0, -1)
-debug_shape_thickness = 5
 
 [node name="Camera3D" type="Camera3D" parent="cameraGimbal"]
 transform = Transform3D(1, 0, 0, 0, 0.98480785, -0.17364818, 0, 0.17364818, 0.98480785, 0, 0, 0)

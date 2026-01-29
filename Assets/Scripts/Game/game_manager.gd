@@ -2,10 +2,11 @@ extends Node
 
 const MAIN_MENU: PackedScene = preload("res://Assets/Scenes/Menus/MainMenu.tscn")
 ##const LOAD_SCREEN = preload("res://Assets/Scenes/Game/loading_screen.tscn") ## Not Needed for current scope of game :D
-const GAME_WORLD: NodePath = "res://Assets/Scenes/terrain_data/welt.tscn"
+const GAME_WORLD: NodePath = "uid://dv04quyg11skf"
 const PAUSE_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/pauseScreen.tscn")
 const SETTINGS_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/settingsMenu.tscn")
 const GAME_OVERLAY: PackedScene = preload("uid://d30pp2svsgjo7");
+
 
 var pauseScreen: Node = null;
 var settingsScreen: Node = null;
@@ -16,6 +17,7 @@ var gameOverlay: Control = null;
 var load_progress = [];
 var load_Status: int = 0;
 
+##Signals
 signal loadingDone
 signal settingsTrigger
 signal resolutionChange
@@ -23,13 +25,17 @@ signal fullscreenTrigger
 signal interactionTrigger
 signal interactionAvailable
 
+##Game Elements
+
+var qm: QuestManager = QuestManager;
+
 enum GAME_STATE {QUIT = -1, START = 0, PLAY = 1, LOAD = 2, PAUSE = 3, CONTINUE = 4};
 static var currentGameState: int;
 static var current_Scene: Node = null;
 
 func _ready() -> void:
 	_setup();
-	##ResourceLoader.load_threaded_request(GAME_WORLD);
+	ResourceLoader.load_threaded_request(GAME_WORLD);
 
 	
 
@@ -50,7 +56,7 @@ func _setup():
 	settingsScreen.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(settingsScreen);
 	settingsScreen.hide();
-	##setGameState(GAME_STATE.START);
+	setGameState(GAME_STATE.START);
 	
 	gameOverlay = GAME_OVERLAY.instantiate();
 	add_child(gameOverlay);

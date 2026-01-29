@@ -1,0 +1,5 @@
+[gd_resource type="FastNoiseLite" format=3 uid="uid://n7m5jql5qaaq"]
+
+[resource]
+resource_name = "grass_Noise"
+frequency = 0.0373

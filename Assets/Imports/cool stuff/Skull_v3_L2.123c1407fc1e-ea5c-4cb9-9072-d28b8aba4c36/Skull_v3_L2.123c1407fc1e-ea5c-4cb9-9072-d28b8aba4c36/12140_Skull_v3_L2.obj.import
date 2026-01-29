@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfgrubcv53awh"
+path="res://.godot/imported/12140_Skull_v3_L2.obj-0779af8de38616bc6b5cfde24b00319c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/12140_Skull_v3_L2.obj-0779af8de38616bc6b5cfde24b00319c.mesh"]
+
+source_file="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/12140_Skull_v3_L2.obj"
+dest_files=["res://.godot/imported/12140_Skull_v3_L2.obj-0779af8de38616bc6b5cfde24b00319c.mesh", "res://.godot/imported/12140_Skull_v3_L2.obj-0779af8de38616bc6b5cfde24b00319c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(0.02, 0.02, 0.02)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
