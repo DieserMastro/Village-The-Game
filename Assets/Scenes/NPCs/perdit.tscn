@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmo34i1aeam53"]
+
+[ext_resource type="PackedScene" uid="uid://nfd3q7g016pi" path="res://Assets/Imports/cool stuff/thing/perdit.glb" id="1_xfu63"]
+
+[node name="Perdit" instance=ExtResource("1_xfu63")]
+
+[node name="Zweihander" parent="Sketchfab_model/6aada358f84a4442890d69f31fb63402_fbx/RootNode" index="2"]
+visible = false

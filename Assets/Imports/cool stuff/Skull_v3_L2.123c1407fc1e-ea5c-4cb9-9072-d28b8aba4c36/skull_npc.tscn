@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2s3jbypqk1w0"]
 
-[ext_resource type="Script" uid="uid://dvw4fggqfxrm5" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/SkullNPC.gd" id="1_yswrv"]
+[ext_resource type="Script" uid="uid://dvw4fggqfxrm5" path="res://Assets/Scripts/NPCs/SkullNPC.gd" id="1_yswrv"]
 [ext_resource type="PackedScene" uid="uid://p30vb07ita1u" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/glowing_skull.tscn" id="2_ohrhs"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_spxkw"]

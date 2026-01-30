@@ -5,3 +5,4 @@
 project.godot
 *.godot
 *.dll
+/Assets/Imports/cool stuff/thing

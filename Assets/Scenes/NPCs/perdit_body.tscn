@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6jevamvir85c"]
+
+[ext_resource type="Script" uid="uid://elwd8aq2tpv2" path="res://Assets/Scripts/NPCs/perdit.gd" id="1_xy158"]
+[ext_resource type="PackedScene" uid="uid://r5xvm3ffib0a" path="res://Assets/Imports/cool stuff/thing/Perdit.tscn" id="2_mvp6m"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy158"]
+radius = 1.8000001
+height = 9.0
+
+[node name="PerditBody" type="StaticBody3D"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_xy158")
+
+[node name="Perdit" parent="." instance=ExtResource("2_mvp6m")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 4.299997, 0)
+shape = SubResource("CapsuleShape3D_xy158")

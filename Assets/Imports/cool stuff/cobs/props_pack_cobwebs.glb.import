@@ -1,0 +1,189 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://begy15655jo2u"
+path="res://.godot/imported/props_pack_cobwebs.glb-03bc3601dbbabbd847c1b98475761618.scn"
+
+[deps]
+
+source_file="res://Assets/Imports/cool stuff/cobs/props_pack_cobwebs.glb"
+dest_files=["res://.godot/imported/props_pack_cobwebs.glb-03bc3601dbbabbd847c1b98475761618.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"meshes": {
+"FAB converted_SM_Cobwebs_01_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_01_Cobwebs_M_0.res",
+"save_to_file/path": "uid://sali0tsjpacp"
+},
+"FAB converted_SM_Cobwebs_02_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_02_Cobwebs_M_0.res",
+"save_to_file/path": "uid://cdk6qqfsvxsc4"
+},
+"FAB converted_SM_Cobwebs_03_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_03_Cobwebs_M_0.res",
+"save_to_file/path": "uid://dohgimyj2tsk2"
+},
+"FAB converted_SM_Cobwebs_04_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_04_Cobwebs_M_0.res",
+"save_to_file/path": "uid://bq4amdddpx7q8"
+},
+"FAB converted_SM_Cobwebs_05_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_05_Cobwebs_M_0.res",
+"save_to_file/path": "uid://b0amedor6n3f5"
+},
+"FAB converted_SM_Cobwebs_06_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_06_Cobwebs_M_0.res",
+"save_to_file/path": "uid://uunkycw1nn51"
+},
+"FAB converted_SM_Cobwebs_07_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_07_Cobwebs_M_0.res",
+"save_to_file/path": "uid://fivyi1cn2w48"
+},
+"FAB converted_SM_Cobwebs_08_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_08_Cobwebs_M_0.res",
+"save_to_file/path": "uid://do7lgkyd81lbd"
+},
+"FAB converted_SM_Cobwebs_09_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_09_Cobwebs_M_0.res",
+"save_to_file/path": "uid://bv4586qnl3c12"
+},
+"FAB converted_SM_Cobwebs_10_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_10_Cobwebs_M_0.res",
+"save_to_file/path": "uid://dnop7oinvoqoq"
+},
+"FAB converted_SM_Cobwebs_11_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_11_Cobwebs_M_0.res",
+"save_to_file/path": "uid://n0v5jej58u12"
+},
+"FAB converted_SM_Cobwebs_12_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/cob3.res",
+"save_to_file/path": "uid://bo665h561nvs7"
+},
+"FAB converted_SM_Cobwebs_13_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_13_Cobwebs_M_0.res",
+"save_to_file/path": "uid://cnv76qstqtytn"
+},
+"FAB converted_SM_Cobwebs_14_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_14_Cobwebs_M_0.res",
+"save_to_file/path": "uid://cxcglddiowww5"
+},
+"FAB converted_SM_Cobwebs_15_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_15_Cobwebs_M_0.res",
+"save_to_file/path": "uid://d3lxg17mrro1g"
+},
+"FAB converted_SM_Cobwebs_16_Cobwebs_M_0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_16_Cobwebs_M_0.res",
+"save_to_file/path": "uid://oipcmf1l2ss4"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

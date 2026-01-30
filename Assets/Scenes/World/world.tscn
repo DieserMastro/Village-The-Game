@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dv04quyg11skf"]
+[gd_scene load_steps=31 format=3 uid="uid://dv04quyg11skf"]
 
 [ext_resource type="Material" uid="uid://bo2vckh7oyrkv" path="res://Assets/Texture/Ground103_1K-PNG/Ground103_1K-PNG.tres" id="1_7rdkw"]
 [ext_resource type="Material" uid="uid://cnjqd7dypkbql" path="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG.tres" id="1_ahn5v"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://b2s3jbypqk1w0" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_npc.tscn" id="21_tlyw5"]
 [ext_resource type="PackedScene" uid="uid://f5jsdn87vjl5" path="res://Assets/Imports/cool stuff/Skull_v3_L2.123c1407fc1e-ea5c-4cb9-9072-d28b8aba4c36/skull_pickupable.tscn" id="21_y1wgp"]
 [ext_resource type="PackedScene" uid="uid://dbflvu62rnml0" path="res://Assets/Scenes/Game/quests/skull_quest.tscn" id="22_tlyw5"]
+[ext_resource type="PackedScene" uid="uid://b6jevamvir85c" path="res://Assets/Scenes/NPCs/perdit_body.tscn" id="23_hw8x4"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bvknm"]
 
@@ -179,3 +180,9 @@ transform = Transform3D(-1.3394489e-08, -0.11970707, -0.3288924, -5.23256e-09, 0
 
 [node name="skull_Pickupable2" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
 transform = Transform3D(0.30310887, 0, -0.175, 0, 0.35, 0, 0.175, 0, 0.30310887, 8.5, 1.8, -68.18)
+
+[node name="PerditBody" parent="." instance=ExtResource("23_hw8x4")]
+transform = Transform3D(-0.19283631, 0, 0.2298133, 0, 0.29999995, 0, -0.2298133, 0, -0.19283631, 3.9999998, 1.12, -67.2)
+speed = 0.005
+rotSpeed = 0.005
+range = 5000.0

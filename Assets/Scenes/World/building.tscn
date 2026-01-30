@@ -1,14 +1,16 @@
-[gd_scene load_steps=61 format=3 uid="uid://kp2ihu2i8vxn"]
+[gd_scene load_steps=65 format=3 uid="uid://kp2ihu2i8vxn"]
 
 [ext_resource type="PackedScene" uid="uid://h2n6ypqq8rdk" path="res://Assets/Imports/Furniture/KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_large.gltf" id="1_1qcod"]
 [ext_resource type="PackedScene" uid="uid://dq7g1owiou4lb" path="res://Assets/Imports/Furniture/KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_small.gltf" id="2_7qb87"]
 [ext_resource type="PackedScene" uid="uid://cib3nux0rsywi" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Corner.gltf" id="3_vfum0"]
 [ext_resource type="PackedScene" uid="uid://dva3xdf3vxfpq" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Straight.gltf" id="4_njyh5"]
 [ext_resource type="PackedScene" uid="uid://wmh8fj2ru4v7" path="res://Assets/Imports/Medieval buildings/glTF/Corner_ExteriorWide_Wood.gltf" id="5_g4fwk"]
+[ext_resource type="ArrayMesh" uid="uid://oypm4f8qwmpu" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_05_Cobwebs_M_0.res" id="6_g4fwk"]
 [ext_resource type="PackedScene" uid="uid://cutn7doqk6rqd" path="res://Assets/Scenes/Building_1/stairs_collisioned.tscn" id="6_tjk85"]
 [ext_resource type="PackedScene" uid="uid://djwjb8m3u21gh" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Exterior_Wood.gltf" id="7_16u16"]
 [ext_resource type="PackedScene" uid="uid://bbqi1o1rs6s07" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine9.gltf" id="8_06fe8"]
 [ext_resource type="PackedScene" uid="uid://0ka87y3x1wsd" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine6.gltf" id="9_lrlvq"]
+[ext_resource type="ArrayMesh" uid="uid://b4m6ojn7mmv0a" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_07_Cobwebs_M_0.res" id="9_tjk85"]
 [ext_resource type="PackedScene" uid="uid://b0055s2h6n22w" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_R.gltf" id="10_qkvtk"]
 [ext_resource type="PackedScene" uid="uid://cm15ixa8u2d05" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_L.gltf" id="11_fghk6"]
 [ext_resource type="PackedScene" uid="uid://cesfdf14bmoy5" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_Center_Mirror.gltf" id="12_2uxps"]
@@ -25,11 +27,13 @@
 [ext_resource type="PackedScene" uid="uid://g1mg5gru1j45" path="res://Assets/Imports/Medieval buildings/glTF/WindowShutters_Wide_Flat_Open.gltf" id="23_rf5qd"]
 [ext_resource type="PackedScene" uid="uid://c1n5fi6r0gbv1" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine1.gltf" id="24_v2fvi"]
 [ext_resource type="PackedScene" uid="uid://ccvn62wrpttv2" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Door_Round.gltf" id="25_ys057"]
+[ext_resource type="ArrayMesh" uid="uid://dq6nn0ph3migr" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_10_Cobwebs_M_0.res" id="26_16u16"]
 [ext_resource type="PackedScene" uid="uid://bjgcoitwihxeq" path="res://Assets/Imports/Medieval buildings/glTF/DoorFrame_Round_WoodDark.gltf" id="26_y2tbc"]
 [ext_resource type="PackedScene" uid="uid://i1yhstjtu3m8" path="res://Assets/Scenes/Assets with Collision/Door/door.tscn" id="27_gr5nd"]
 [ext_resource type="PackedScene" uid="uid://dwiihjy1wy6yh" path="res://Assets/Imports/Furniture/bench_01.tscn" id="28_yjeo2"]
 [ext_resource type="PackedScene" uid="uid://dlkhnthyhck3x" path="res://Assets/Imports/Furniture/table_01.tscn" id="29_v8ced"]
 [ext_resource type="PackedScene" uid="uid://xdmoyhkhnat7" path="res://Assets/Imports/Furniture/cupboard.tscn" id="30_v26tx"]
+[ext_resource type="ArrayMesh" uid="uid://b3lymfr4x2qa4" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_08_Cobwebs_M_0.res" id="31_06fe8"]
 [ext_resource type="PackedScene" uid="uid://bungc2q5ho67h" path="res://Assets/Imports/Medieval buildings/glTF/crate.tscn" id="31_qk3jh"]
 [ext_resource type="PackedScene" uid="uid://cu7sxqwu5s8ay" path="res://Assets/Imports/Furniture/chandelier/33-chandelier/chandelier_4.tscn" id="32_0pay3"]
 [ext_resource type="PackedScene" uid="uid://c50l12pm10xm4" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Interior_Big.gltf" id="33_83e61"]
@@ -171,6 +175,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7799997, 0.22, 5.1599994)
 [node name="Corner_ExteriorWide_Wood3" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7999997, 0.22, 5.1799994)
 
+[node name="SM_Cobwebs_05_Cobwebs_M_0" type="MeshInstance3D" parent="Building_Test/Foundation/Balcony/Corner_ExteriorWide_Wood3"]
+transform = Transform3D(0.011499999, 0, 0, 0, 0.011499999, 0, 0, 0, 0.01, -1.7, 1.1, 0.01999998)
+mesh = ExtResource("6_g4fwk")
+skeleton = NodePath("")
+
 [node name="Corner_ExteriorWide_Wood6" parent="Building_Test/Foundation/Balcony" instance=ExtResource("5_g4fwk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7999997, -0.58, 3.1799994)
 
@@ -242,6 +251,11 @@ shape = SubResource("BoxShape3D_75h0y")
 
 [node name="Corner_Exterior_Wood2" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.2199998, 5.18)
+
+[node name="SM_Cobwebs_07_Cobwebs_M_0" type="MeshInstance3D" parent="Building_Test/Foundation/Balcony/Corner_Exterior_Wood2"]
+transform = Transform3D(1.0927845e-09, -0.06900001, 1.5099586e-08, -0.020887192, -8.245077e-09, -0.054950893, 0.013737723, -7.047341e-09, -0.08354877, -0.4000001, -3.6, 0.84000015)
+mesh = ExtResource("9_tjk85")
+skeleton = NodePath("")
 
 [node name="Corner_Exterior_Wood4" parent="Building_Test/Foundation/Balcony" instance=ExtResource("7_16u16")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2, 3.2199998, 5.18)
@@ -580,6 +594,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2000003, 1, 1.6)
 
 [node name="Wall_Plaster_Window_Wide_Flat2" parent="Building_Test/groundFloor/Walls/Wall_front/window" instance=ExtResource("21_58grx")]
 
+[node name="SM_Cobwebs_10_Cobwebs_M_0" type="MeshInstance3D" parent="Building_Test/groundFloor/Walls/Wall_front/window"]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -0.5999999, 4.2000003, 0.20000005)
+mesh = ExtResource("26_16u16")
+skeleton = NodePath("")
+
 [node name="window2" parent="Building_Test/groundFloor/Walls/Wall_front" instance=ExtResource("20_ynb3a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.200001, 1, 1.6)
 
@@ -699,6 +718,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52000004, 0, -2.3841858e-07
 [node name="Door" parent="Building_Test/groundFloor/doorNode" instance=ExtResource("27_gr5nd")]
 collision_layer = 3
 collision_mask = 2
+
+[node name="SM_Cobwebs_08_Cobwebs_M_0" type="MeshInstance3D" parent="Building_Test/groundFloor/doorNode/Door"]
+transform = Transform3D(-0.02, 0, 1.7484555e-09, 0, 0.02, 0, -1.7484555e-09, 0, -0.02, 5.6, 3, 0.120000005)
+mesh = ExtResource("31_06fe8")
+skeleton = NodePath("")
 
 [node name="doorNode2" type="Node3D" parent="Building_Test/groundFloor"]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.6800003, 1, -8.72)
