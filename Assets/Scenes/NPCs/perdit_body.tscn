@@ -5,16 +5,16 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy158"]
 radius = 1.8000001
-height = 9.0
+height = 7.375
 
 [node name="PerditBody" type="StaticBody3D"]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
-collision_layer = 2
-collision_mask = 2
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_xy158")
 
 [node name="Perdit" parent="." instance=ExtResource("2_mvp6m")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 4.299997, 0)
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 3.262496, 0)
 shape = SubResource("CapsuleShape3D_xy158")

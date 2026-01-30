@@ -6,9 +6,10 @@ const GAME_WORLD: NodePath = "uid://dv04quyg11skf"
 const PAUSE_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/pauseScreen.tscn")
 const SETTINGS_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/settingsMenu.tscn")
 const GAME_OVERLAY: PackedScene = preload("uid://d30pp2svsgjo7");
+const AUDIO_PLAYLIST: PackedScene = preload("uid://c3nvb576ppl82");
 
 
-
+var audioPlaylist: Node = null;
 var pauseScreen: Node = null;
 var settingsScreen: Node = null;
 var settingsScreenBool: bool = false;
@@ -46,6 +47,9 @@ func _process(delta: float) -> void:
 
 func _setup():
 	
+	audioPlaylist = AUDIO_PLAYLIST.instantiate();
+	audioPlaylist.process_mode = Node.PROCESS_MODE_ALWAYS;
+	add_child(audioPlaylist);
 	pauseScreen = PAUSE_SCREEN.instantiate();
 	pauseScreen.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(pauseScreen);

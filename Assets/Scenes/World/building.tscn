@@ -5,12 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://cib3nux0rsywi" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Corner.gltf" id="3_vfum0"]
 [ext_resource type="PackedScene" uid="uid://dva3xdf3vxfpq" path="res://Assets/Imports/Medieval buildings/glTF/Balcony_Cross_Straight.gltf" id="4_njyh5"]
 [ext_resource type="PackedScene" uid="uid://wmh8fj2ru4v7" path="res://Assets/Imports/Medieval buildings/glTF/Corner_ExteriorWide_Wood.gltf" id="5_g4fwk"]
-[ext_resource type="ArrayMesh" uid="uid://oypm4f8qwmpu" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_05_Cobwebs_M_0.res" id="6_g4fwk"]
+[ext_resource type="ArrayMesh" uid="uid://b0amedor6n3f5" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_05_Cobwebs_M_0.res" id="6_g4fwk"]
 [ext_resource type="PackedScene" uid="uid://cutn7doqk6rqd" path="res://Assets/Scenes/Building_1/stairs_collisioned.tscn" id="6_tjk85"]
 [ext_resource type="PackedScene" uid="uid://djwjb8m3u21gh" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Exterior_Wood.gltf" id="7_16u16"]
 [ext_resource type="PackedScene" uid="uid://bbqi1o1rs6s07" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine9.gltf" id="8_06fe8"]
 [ext_resource type="PackedScene" uid="uid://0ka87y3x1wsd" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine6.gltf" id="9_lrlvq"]
-[ext_resource type="ArrayMesh" uid="uid://b4m6ojn7mmv0a" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_07_Cobwebs_M_0.res" id="9_tjk85"]
+[ext_resource type="ArrayMesh" uid="uid://fivyi1cn2w48" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_07_Cobwebs_M_0.res" id="9_tjk85"]
 [ext_resource type="PackedScene" uid="uid://b0055s2h6n22w" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_R.gltf" id="10_qkvtk"]
 [ext_resource type="PackedScene" uid="uid://cm15ixa8u2d05" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_L.gltf" id="11_fghk6"]
 [ext_resource type="PackedScene" uid="uid://cesfdf14bmoy5" path="res://Assets/Imports/Medieval buildings/glTF/Roof_Wooden_2x1_Center_Mirror.gltf" id="12_2uxps"]
@@ -27,13 +27,13 @@
 [ext_resource type="PackedScene" uid="uid://g1mg5gru1j45" path="res://Assets/Imports/Medieval buildings/glTF/WindowShutters_Wide_Flat_Open.gltf" id="23_rf5qd"]
 [ext_resource type="PackedScene" uid="uid://c1n5fi6r0gbv1" path="res://Assets/Imports/Medieval buildings/glTF/Prop_Vine1.gltf" id="24_v2fvi"]
 [ext_resource type="PackedScene" uid="uid://ccvn62wrpttv2" path="res://Assets/Imports/Medieval buildings/glTF/Wall_Plaster_Door_Round.gltf" id="25_ys057"]
-[ext_resource type="ArrayMesh" uid="uid://dq6nn0ph3migr" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_10_Cobwebs_M_0.res" id="26_16u16"]
+[ext_resource type="ArrayMesh" uid="uid://dnop7oinvoqoq" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_10_Cobwebs_M_0.res" id="26_16u16"]
 [ext_resource type="PackedScene" uid="uid://bjgcoitwihxeq" path="res://Assets/Imports/Medieval buildings/glTF/DoorFrame_Round_WoodDark.gltf" id="26_y2tbc"]
 [ext_resource type="PackedScene" uid="uid://i1yhstjtu3m8" path="res://Assets/Scenes/Assets with Collision/Door/door.tscn" id="27_gr5nd"]
 [ext_resource type="PackedScene" uid="uid://dwiihjy1wy6yh" path="res://Assets/Imports/Furniture/bench_01.tscn" id="28_yjeo2"]
 [ext_resource type="PackedScene" uid="uid://dlkhnthyhck3x" path="res://Assets/Imports/Furniture/table_01.tscn" id="29_v8ced"]
 [ext_resource type="PackedScene" uid="uid://xdmoyhkhnat7" path="res://Assets/Imports/Furniture/cupboard.tscn" id="30_v26tx"]
-[ext_resource type="ArrayMesh" uid="uid://b3lymfr4x2qa4" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_08_Cobwebs_M_0.res" id="31_06fe8"]
+[ext_resource type="ArrayMesh" uid="uid://do7lgkyd81lbd" path="res://Assets/Imports/cool stuff/cobs/FAB converted_SM_Cobwebs_08_Cobwebs_M_0.res" id="31_06fe8"]
 [ext_resource type="PackedScene" uid="uid://bungc2q5ho67h" path="res://Assets/Imports/Medieval buildings/glTF/crate.tscn" id="31_qk3jh"]
 [ext_resource type="PackedScene" uid="uid://cu7sxqwu5s8ay" path="res://Assets/Imports/Furniture/chandelier/33-chandelier/chandelier_4.tscn" id="32_0pay3"]
 [ext_resource type="PackedScene" uid="uid://c50l12pm10xm4" path="res://Assets/Imports/Medieval buildings/glTF/Corner_Interior_Big.gltf" id="33_83e61"]
@@ -197,6 +197,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, -1.88, 7.55)
 disable_mode = 1
 input_ray_pickable = false
 
+[node name="stairs_collisioned2" parent="Building_Test/Foundation/Balcony" instance=ExtResource("6_tjk85")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.2, -1.8, -11.449999)
+disable_mode = 1
+input_ray_pickable = false
+
 [node name="collisions" type="Node3D" parent="Building_Test/Foundation/Balcony"]
 
 [node name="collision3" type="StaticBody3D" parent="Building_Test/Foundation/Balcony/collisions"]
@@ -253,7 +258,7 @@ shape = SubResource("BoxShape3D_75h0y")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.2199998, 5.18)
 
 [node name="SM_Cobwebs_07_Cobwebs_M_0" type="MeshInstance3D" parent="Building_Test/Foundation/Balcony/Corner_Exterior_Wood2"]
-transform = Transform3D(1.0927845e-09, -0.06900001, 1.5099586e-08, -0.020887192, -8.245077e-09, -0.054950893, 0.013737723, -7.047341e-09, -0.08354877, -0.4000001, -3.6, 0.84000015)
+transform = Transform3D(7.332324e-10, 0.06900002, -1.0295629e-08, -0.013737726, 7.0473427e-09, 0.08354877, 0.020887192, 2.2129052e-09, 0.054950904, -13.800001, -1.8000003, 2.8400002)
 mesh = ExtResource("9_tjk85")
 skeleton = NodePath("")
 
@@ -780,19 +785,19 @@ transform = Transform3D(0.9848077, 0, 0.17364818, 0, 1, 0, -0.17364818, 0, 0.984
 transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -11.200001, 1.2, -25.400002)
 
 [node name="Corner_Interior_Big16" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
-transform = Transform3D(9.184191e-16, -1.0499997, 2.9802322e-08, -4.5896954e-08, -2.9802322e-08, -1.0499997, 1.0499998, 9.184188e-16, -4.589695e-08, 4.7400002, 6.88, -22.56)
+transform = Transform3D(9.18419e-16, -1.0499997, 2.980232e-08, 1.3769085e-07, 2.980232e-08, 1.0499997, -1.0499998, 1.6869828e-15, 1.3769085e-07, 4.7400002, 7.1799994, -22.16)
 
 [node name="Corner_Interior_Big17" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
-transform = Transform3D(-4.5896957e-08, -1.2, 4.5896957e-08, 0, -5.2453668e-08, -1.05, 1.05, -5.2453668e-08, 0, 1.58, 6.88, -22.56)
+transform = Transform3D(-4.5896954e-08, -1.2, 4.5896954e-08, 9.179392e-08, 5.2453668e-08, 1.0500001, -1.0500001, 5.2453675e-08, 9.179392e-08, 1.58, 7.1799994, -22.16)
 
 [node name="Corner_Interior_Big18" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
-transform = Transform3D(-1.05, 1.0927848e-07, -4.0124395e-15, 8.02488e-15, 5.4639237e-08, -1.05, -9.179392e-08, -1.25, -4.5896957e-08, -0.41999996, 6.88, -22.56)
+transform = Transform3D(4.589695e-08, -5.4639262e-08, 1.05, -1.05, 1.09278496e-07, 4.5896954e-08, -9.179392e-08, -1.2499999, -4.5896954e-08, -0.41999996, 7.28, -22.5)
 
 [node name="Corner_Interior_Big20" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
-transform = Transform3D(-1.05, 1.0927848e-07, -4.0124395e-15, 8.02488e-15, 5.4639237e-08, -1.05, -9.179392e-08, -1.25, -4.5896957e-08, -0.41999996, 6.88, -18.56)
+transform = Transform3D(4.589695e-08, -5.4639262e-08, 1.05, -1.05, 1.09278496e-07, 4.5896954e-08, -9.179392e-08, -1.2499999, -4.5896954e-08, -0.41999996, 7.2200003, -18.56)
 
 [node name="Corner_Interior_Big19" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("33_83e61")]
-transform = Transform3D(9.184191e-16, -1.0499997, 2.9802322e-08, -4.5896954e-08, -2.9802322e-08, -1.0499997, 1.0499998, 9.184188e-16, -4.589695e-08, -2.02, 6.88, -22.56)
+transform = Transform3D(9.18419e-16, -1.0499997, 2.980232e-08, 1.3769085e-07, 2.980232e-08, 1.0499997, -1.0499998, 1.6869828e-15, 1.3769085e-07, -2.02, 7.1799994, -22.16)
 
 [node name="chandelier4" parent="Building_Test/groundFloor/Interior/Furniture" instance=ExtResource("32_0pay3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65999997, 6.8199997, -22.36)

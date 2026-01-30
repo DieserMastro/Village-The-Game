@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://w1udncaymdee"
-path="res://.godot/imported/Flower_4_Clump.gltf-b13e0c6625ffb5c0b8ec5a92da67de9c.scn"
+uid="uid://d3jg1i4q2pypi"
+path="res://.godot/imported/Graves.dae-b7a4d31e556177b63b82239e31610c03.scn"
 
 [deps]
 
-source_file="res://Assets/Imports/Nature/glTF/Flower_4_Clump.gltf"
-dest_files=["res://.godot/imported/Flower_4_Clump.gltf-b13e0c6625ffb5c0b8ec5a92da67de9c.scn"]
+source_file="res://Assets/Imports/cool stuff/Gravestones/Models/Graves.dae"
+dest_files=["res://.godot/imported/Graves.dae-b7a4d31e556177b63b82239e31610c03.scn"]
 
 [params]
 
@@ -37,18 +37,4 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"meshes": {
-"Flower_4_Clump_Plane_069": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Imports/flips/flowerMesh.res",
-"save_to_file/path": "uid://b2kbitvyil0x3"
-}
-}
-}
-gltf/naming_version=2
-gltf/embedded_image_handling=1
+_subresources={}

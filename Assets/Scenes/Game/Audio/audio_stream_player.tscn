@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3nvb576ppl82"]
+
+[ext_resource type="AudioStream" uid="uid://dmpg0nfet4lc1" path="res://Assets/Audio/OST/mainOST.wav" id="1_n454y"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_iqhca"]
+fade_time = 0.6
+stream_count = 1
+stream_0 = ExtResource("1_n454y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamPlaylist_iqhca")
+autoplay = true
