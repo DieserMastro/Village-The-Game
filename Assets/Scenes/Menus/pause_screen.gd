@@ -2,7 +2,10 @@ extends Control
 
 
 var gm: GameManager = GameManager;
+var startVol: float;
 
+func _ready() -> void:
+	startVol = db_to_linear(AudioServer.get_bus_volume_db(0))
 func _unhandled_input(event: InputEvent) -> void:
 	if self.is_visible_in_tree():
 		if event is InputEventKey:
@@ -13,7 +16,8 @@ func _on_continue_button_pressed() -> void:
 	gm.setGameState(gm.GAME_STATE.CONTINUE);
 
 func _on_volume_value_changed(value: float) -> void:
-	AudioServer.set_bus_volume_db(0, value);
+	var newVolume: float = linear_to_db(startVol * (value/100))
+	AudioServer.set_bus_volume_db(0, newVolume);
 
 func _on_mute_button_toggled(toggled_on: bool) -> void:
 	AudioServer.set_bus_mute(0, toggled_on);

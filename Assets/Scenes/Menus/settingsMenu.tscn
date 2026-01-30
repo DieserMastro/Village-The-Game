@@ -61,9 +61,7 @@ text = "Volume"
 
 [node name="volume" type="HSlider" parent="BoxContainer"]
 layout_mode = 2
-min_value = -10.0
-max_value = 70.0
-value = 50.0
+value = 100.0
 rounded = true
 tick_count = 100
 ticks_on_borders = true

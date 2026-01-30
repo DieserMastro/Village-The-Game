@@ -1,5 +1,6 @@
 extends Node
 
+
 const MAIN_MENU: PackedScene = preload("res://Assets/Scenes/Menus/MainMenu.tscn")
 ##const LOAD_SCREEN = preload("res://Assets/Scenes/Game/loading_screen.tscn") ## Not Needed for current scope of game :D
 const GAME_WORLD: NodePath = "uid://dv04quyg11skf"

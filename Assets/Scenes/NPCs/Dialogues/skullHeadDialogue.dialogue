@@ -1,11 +1,14 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Skull: What the-
+Skull: How did you get here?
+Skull: [speed=0.2]...
+
+=> give_Quest
+~ give_Quest
+Skull: Ah, so be it.
+Skull: No harm in that, eh?
+Skull: Listen... If you do me a solid, I won't snitch.
+Skull: My siblings got lost again. Can you find them for me?
+Skull: I got five of those bones for brains.
 => END
+

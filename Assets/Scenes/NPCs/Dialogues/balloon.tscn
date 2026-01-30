@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://dofeb1yhka7eh"]
 
-[ext_resource type="Script" uid="uid://j4i3d4dftavm" path="res://Assets/Scenes/NPCs/Dialogues/balloon.gd" id="1_36de5"]
+[ext_resource type="Script" uid="uid://c3p1u14k4snaw" path="res://Assets/Scenes/NPCs/Dialogues/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 
@@ -53,6 +53,7 @@ corner_radius_bottom_left = 5
 
 [sub_resource type="Theme" id="Theme_qq3yp"]
 default_font_size = 20
+Button/font_sizes/font_size = 20
 Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
 Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
 Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
@@ -115,11 +116,14 @@ theme = SubResource("Theme_qq3yp")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon"]
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = -1
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -219.0
+offset_left = 554.0
+offset_top = -337.0
+offset_right = -554.0
+offset_bottom = -150.0
 grow_horizontal = 2
 grow_vertical = 0
 

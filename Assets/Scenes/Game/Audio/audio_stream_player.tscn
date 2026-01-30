@@ -9,4 +9,5 @@ stream_0 = ExtResource("1_n454y")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = SubResource("AudioStreamPlaylist_iqhca")
+volume_db = -10.0
 autoplay = true

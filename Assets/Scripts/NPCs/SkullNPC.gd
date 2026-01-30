@@ -31,6 +31,7 @@ func _process(delta: float) -> void:
 func _on_trigger_interaction() -> void:
 	match skullQuest.currentStatus:
 		skullQuest.QUEST_STATUS.AVAILABLE:
+			DialogueManager.show_dialogue_balloon(load("res://Assets/Scenes/NPCs/Dialogues/skullHeadDialogue.dialogue"))
 			skullQuest.triggerQuest();
 		skullQuest.QUEST_STATUS.ONGOING:
 			chitchat();
