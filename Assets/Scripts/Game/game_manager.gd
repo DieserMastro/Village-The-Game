@@ -7,10 +7,12 @@ const GAME_WORLD: NodePath = "uid://dv04quyg11skf"
 const PAUSE_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/pauseScreen.tscn")
 const SETTINGS_SCREEN: PackedScene = preload("res://Assets/Scenes/Menus/settingsMenu.tscn")
 const GAME_OVERLAY: PackedScene = preload("uid://d30pp2svsgjo7");
-const AUDIO_PLAYLIST: PackedScene = preload("uid://c3nvb576ppl82");
+const AUDIO_STREAM: PackedScene = preload("uid://c3nvb576ppl82");
 
 
-var audioPlaylist: Node = null;
+
+
+var audioStream: AudioStreamPlayer = null;
 var pauseScreen: Node = null;
 var settingsScreen: Node = null;
 var settingsScreenBool: bool = false;
@@ -21,7 +23,11 @@ var questManager: Node = null;
 var load_progress = [];
 var load_Status: int = 0;
 
+var fadeoutOn: bool = false;
+@export var fadeoutValue: float = 0.05;
+
 ##Signals
+signal fadeoutMusic
 signal loadingDone
 signal settingsTrigger
 signal resolutionChange
@@ -45,12 +51,24 @@ func _process(delta: float) -> void:
 		if load_Status == ResourceLoader.THREAD_LOAD_LOADED:
 			isLoading = false;
 			loadingDone.emit();
+			
+	if fadeoutOn:
+		print("Fading out, current volume_db: ", audioStream.volume_db)
+		fadeout(fadeoutValue * delta);
+		
 
 func _setup():
 	
-	audioPlaylist = AUDIO_PLAYLIST.instantiate();
-	audioPlaylist.process_mode = Node.PROCESS_MODE_ALWAYS;
-	add_child(audioPlaylist);
+	print("_setup() called from:")
+	print_stack()
+	audioStream = AUDIO_STREAM.instantiate()
+	prints("audioStream is: ", audioStream)
+	audioStream.process_mode = Node.PROCESS_MODE_ALWAYS
+	add_child(audioStream)
+	audioStream.play()
+	print("Audio started in setup, playing: ", audioStream.playing)
+	print("Audio stream: ", audioStream.stream)
+	print("Initial volume_db: ", audioStream.volume_db)
 	pauseScreen = PAUSE_SCREEN.instantiate();
 	pauseScreen.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(pauseScreen);
@@ -70,6 +88,7 @@ func _setup():
 	fullscreenTrigger.connect(_on_fullscreen_trigger);
 	interactionAvailable.connect(_on_interaction_available);
 	interactionTrigger.connect(_on_interaction_trigger);
+	fadeoutMusic.connect(_on_fadeout_music);
 
 func _on_settings_trigger():
 	if !settingsScreenBool:
@@ -178,3 +197,20 @@ func showAvailableInteraction(args: String):
 	else:
 		promptLabel.text = "'E' to " + args;
 		gameOverlay.show()
+
+
+func fadeout(value: float):
+	audioStream.volume_db = linear_to_db(max(db_to_linear(audioStream.volume_db) - value, 0.0001))
+	if audioStream.volume_db <= -79 or audioStream.volume_linear <= 0.001: 
+		fadeoutOn = false
+		audioStream.stream_paused = true # Actually stop playback
+		print("Audio stopped")
+
+func _on_fadeout_music() -> void:
+	if fadeoutOn:
+		return
+	print("fadeout Triggered")
+	print("audioStream exists: ", audioStream != null)
+	print("audioStream playing: ", audioStream.playing if audioStream else "null")
+	audioStream.play()
+	fadeoutOn = true

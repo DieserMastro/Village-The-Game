@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dv04quyg11skf"]
+[gd_scene load_steps=36 format=3 uid="uid://dv04quyg11skf"]
 
 [ext_resource type="Material" uid="uid://bo2vckh7oyrkv" path="res://Assets/Texture/Ground103_1K-PNG/Ground103_1K-PNG.tres" id="1_7rdkw"]
 [ext_resource type="Material" uid="uid://cnjqd7dypkbql" path="res://Assets/Texture/Grass004_1K-PNG/Grass004_1K-PNG.tres" id="1_ahn5v"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://dbflvu62rnml0" path="res://Assets/Scenes/Game/quests/skull_quest.tscn" id="22_tlyw5"]
 [ext_resource type="PackedScene" uid="uid://ddo4djf5bsns0" path="res://Assets/Scenes/World/backyard.tscn" id="23_hw8x4"]
 [ext_resource type="PackedScene" uid="uid://b6jevamvir85c" path="res://Assets/Scenes/NPCs/perdit_body.tscn" id="24_uri15"]
+[ext_resource type="PackedScene" uid="uid://dkeng2rpb3h5h" path="res://Assets/Scenes/NPCs/Skelly_Sit.tscn" id="26_iqhca"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bvknm"]
 
@@ -121,7 +122,7 @@ mesh = SubResource("PlaneMesh_02jbm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.403506, 0.010405526, -62.157837)
 
 [node name="Player" parent="." instance=ExtResource("3_ahn5v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0698156, 0.62590194, -12.600555)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0698156, -26.974098, -110.40056)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 0, 0)
@@ -175,6 +176,12 @@ head = NodePath("../skullNpc/skullQuest/skull_Pickupable")
 range = 0.03
 speed = 0.02
 
+[node name="PerditBody" parent="." instance=ExtResource("24_uri15")]
+transform = Transform3D(-0.29999998, 0, -2.6226832e-08, 0, 0.29999998, 0, 2.6226832e-08, 0, -0.29999998, -1.937151e-07, 0, -88.80001)
+speed = 0.001
+rotSpeed = 0.005
+range = 0.2
+
 [node name="skullNpc" parent="." node_paths=PackedStringArray("skullQuest", "skullArr", "head") instance=ExtResource("21_tlyw5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -63.2)
 skullQuest = NodePath("skullQuest")
@@ -195,8 +202,18 @@ transform = Transform3D(-1.3394489e-08, -0.11970707, -0.3288924, -5.23256e-09, 0
 [node name="skull_Pickupable2" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
 transform = Transform3D(0.30310887, 0, -0.175, 0, 0.35, 0, 0.175, 0, 0.30310887, 8.5, 1.8, -68.18)
 
+[node name="skull_Pickupable4" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
+transform = Transform3D(0.19301845, -0.045866843, 0.28834018, -0.0031689443, 0.34530464, 0.057049602, -0.2919483, -0.034072474, 0.19001378, -7.9000006, 3.3, -67.700005)
+
+[node name="skull_Pickupable3" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
+transform = Transform3D(0.34641013, -0.40000007, -0.6, -0.049020015, 0.6510381, -0.4623272, 0.7194422, 0.23695855, 0.25739774, 10.26, 4.2, -40.78)
+
+[node name="skull_Pickupable5" parent="skullNpc/skullQuest" instance=ExtResource("21_y1wgp")]
+transform = Transform3D(-0.30957735, 0.05046866, -0.32266825, -0.00407436, 0.4439631, 0.07334949, 0.32656595, 0.05338222, -0.3049672, -27.500002, 1.1599998, -95.56)
+
 [node name="Backyard" parent="." instance=ExtResource("23_hw8x4")]
 transform = Transform3D(8.940697e-08, 0, -1.7499998, 0, 1.75, 0, 1.7499998, 0, 8.940697e-08, 0, 0, -94.8)
 
-[node name="PerditBody" parent="." instance=ExtResource("24_uri15")]
-transform = Transform3D(-0.29999998, 0, -2.6226832e-08, 0, 0.29999998, 0, 2.6226832e-08, 0, -0.29999998, -1.937151e-07, 0, -88.80001)
+[node name="Skelly" parent="." node_paths=PackedStringArray("head") instance=ExtResource("26_iqhca")]
+transform = Transform3D(-0.64278764, 0, -0.7660444, 0, 1, 0, 0.7660444, 0, -0.64278764, -27.799997, -2.9802322e-08, -95.799995)
+head = NodePath("../skullNpc/skullQuest/skull_Pickupable5")

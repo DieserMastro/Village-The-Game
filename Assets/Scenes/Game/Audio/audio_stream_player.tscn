@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3nvb576ppl82"]
+[gd_scene load_steps=2 format=3 uid="uid://c3nvb576ppl82"]
 
-[ext_resource type="AudioStream" uid="uid://cb3b102f6sfd7" path="res://Assets/Audio/OST/yurr.mp3" id="1_n454y"]
-
-[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_iqhca"]
-fade_time = 0.6
-stream_count = 1
-stream_0 = ExtResource("1_n454y")
+[ext_resource type="AudioStream" uid="uid://r2732ad4yu72" path="res://Assets/Audio/OST/OST_GoodTake.mp3" id="1_n454y"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = SubResource("AudioStreamPlaylist_iqhca")
-volume_db = -10.0
-autoplay = true
+stream = ExtResource("1_n454y")
+volume_db = -20.0
+parameters/looping = false

@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=3 uid="uid://dkeng2rpb3h5h"]
+
+[ext_resource type="PackedScene" uid="uid://chjh0dkvk1oad" path="res://Assets/Imports/cool stuff/Skelly/Skeleton_Upper.fbx" id="1_a1jqn"]
+[ext_resource type="Script" uid="uid://dggmujmbynr7c" path="res://Assets/Scenes/NPCs/skelly.gd" id="1_rjlpp"]
+[ext_resource type="PackedScene" uid="uid://4l6njd21e5ey" path="res://Assets/Imports/cool stuff/Skelly/Skelly_Feet.fbx" id="2_rjlpp"]
+[ext_resource type="PackedScene" uid="uid://4ol34k1ybwxi" path="res://Assets/Imports/cool stuff/Skelly/Skelly_Thighsfbx.fbx" id="3_7ffrc"]
+[ext_resource type="PackedScene" uid="uid://k73bdwe1qdma" path="res://Assets/Imports/cool stuff/Skelly/Monobloc_plastic_chair.fbx" id="5_7ffrc"]
+[ext_resource type="AudioStream" uid="uid://cmutkpv3nne2" path="res://Assets/Scenes/Game/Audio/bury_the_light_solo.mp3" id="6_yosk7"]
+[ext_resource type="AudioStream" uid="uid://bips5fso0fdv8" path="res://Assets/Scenes/Game/Audio/BURY THE LIGHT.mp3" id="7_yosk7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a1jqn"]
+size = Vector3(0.8, 0.4, 0.62939453)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ioy4x"]
+radius = 4.2000003
+
+[node name="Skelly" type="StaticBody3D" node_paths=PackedStringArray("aspInst", "aspVocal")]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_rjlpp")
+aspInst = NodePath("aspInst")
+aspVocal = NodePath("aspVocal")
+pitch = 0.8
+prompt_message = "Steal Head"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38272828, 0.21675193)
+shape = SubResource("BoxShape3D_a1jqn")
+
+[node name="Skeleton_Upper" parent="." instance=ExtResource("1_a1jqn")]
+transform = Transform3D(0.01, 0, 0, 0, 0.0034202007, -0.009396926, 0, 0.009396926, 0.0034202007, 0, 0.72, -0.16)
+
+[node name="Skelly_Feet" parent="." instance=ExtResource("2_rjlpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4)
+
+[node name="Skelly_Thighsfbx" parent="." instance=ExtResource("3_7ffrc")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.6, 0.88)
+
+[node name="Monobloc_plastic_chair" parent="." instance=ExtResource("5_7ffrc")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+
+[node name="aspInst" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_yosk7")
+volume_db = -65.0
+max_distance = 5.0
+parameters/looping = true
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 9
+
+[node name="soundTrigger" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9802322e-08, 0)
+shape = SubResource("SphereShape3D_ioy4x")
+
+[node name="aspVocal" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_yosk7")
+
+[connection signal="triggerInteraction" from="." to="." method="_on_trigger_interaction"]
+[connection signal="body_shape_entered" from="Area3D" to="." method="_on_area_3d_body_shape_entered"]
+[connection signal="finished" from="aspVocal" to="." method="_on_asp_vocal_finished"]

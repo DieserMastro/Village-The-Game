@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Village-The-Game"
-run/main_scene="uid://b83wsl001wor6"
+run/main_scene="uid://cs8f72gbki8i8"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,21 +24,15 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 settings/stdout/print_fps=true
 
-[dialogue_manager]
-
-runtime/balloon_path="res://Assets/Scenes/NPCs/Dialogues/balloon.tscn"
-
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
-window/size/mode=4
-window/size/borderless=true
+window/size/viewport_width=1280
+window/size/viewport_height=800
 window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/ridiculous_coding/plugin.cfg", "res://addons/unidot_importer/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/ridiculous_coding/plugin.cfg")
 
 [filesystem]
 
