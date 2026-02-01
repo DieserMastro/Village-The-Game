@@ -14,3 +14,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	grass_Noise.frequency += sin(angle) * effectSpeed * frequencyRange;
 	angle += 1 * effectSpeed;
+
+
+func _on_perdit_body_trigger_interaction() -> void:
+	pass # Replace with function body.

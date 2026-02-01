@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var gm: GameManager = GameManager;
+@onready var dm: DialogueManager = DialogueManager;
 @onready var player: CharacterBody3D = $"."
 
 @export_group("Movement")
@@ -27,13 +28,18 @@ var direction: Vector3 = Vector3(0,0,0);
 @onready var raycast: RayCast3D = get_node("cameraGimbal/head/RayCast3D");
 var canInteract: bool = false;
 
-signal broadCastPos
+var isTalking: bool = false;
+
 
 func _ready() -> void:
+	await get_tree().process_frame
 	raycast.add_exception(self);
+	dm.dialogue_started.connect(_on_dialogue_started)
+	dm.dialogue_ended.connect(_on_dialogue_ended)
 	
 func _physics_process(delta: float) -> void:
-	
+	if isTalking:
+		return
 	if raycast.is_colliding():
 		var target = raycast.get_collider();
 		if target is Interactable:
@@ -64,8 +70,6 @@ func _physics_process(delta: float) -> void:
 		velocity.z = 0.0;
 		
 	move_and_slide()
-	
-	broadCastPos.emit(position);
 	
 func _unhandled_input(event):
 	##Mouse movement
@@ -98,7 +102,7 @@ func _unhandled_input(event):
 			pauseGame();
 			
 		## Interact Button
-		if event.is_action_pressed("interact"):
+		if event.is_action_pressed("interact") && !isTalking:
 			gm.interactionTrigger.emit(raycast.get_collider())
 		
 func pauseGame():
@@ -113,3 +117,10 @@ func _on_dash_duration_timeout() -> void:
 	
 func _getPos() -> Vector3:
 	return position;
+
+func _on_dialogue_started(DialogueResource):
+	print("Dialogue Started")
+	isTalking = true;
+	
+func _on_dialogue_ended(DialogueResource):
+	isTalking = false;

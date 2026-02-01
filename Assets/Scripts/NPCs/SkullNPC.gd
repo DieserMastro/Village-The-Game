@@ -2,7 +2,7 @@ extends Interactable
 
 @export var skullQuest: Quest;
 @export var skullArr: Array[Interactable];
-
+@export var dialogue: Resource;
 
 
 @export var head: Node3D;
@@ -27,19 +27,16 @@ func _process(delta: float) -> void:
 	angle += 1 * speed;
 	if angle >= 360:
 		angle = 0;
-
+	
 func _on_trigger_interaction() -> void:
 	match skullQuest.currentStatus:
 		skullQuest.QUEST_STATUS.AVAILABLE:
-			DialogueManager.show_dialogue_balloon(load("res://Assets/Scenes/NPCs/Dialogues/skullHeadDialogue.dialogue"))
+			DialogueManager.show_dialogue_balloon(dialogue, "start")
 			skullQuest.triggerQuest();
 		skullQuest.QUEST_STATUS.ONGOING:
-			chitchat();
+			DialogueManager.show_dialogue_balloon(dialogue, "quest_Ongoing")
 		skullQuest.QUEST_STATUS.FINISHED:
 			skullQuest.setQuestStatus(skullQuest.QUEST_STATUS.COMPLETED);
-			print("YIPPIE!")
+			DialogueManager.show_dialogue_balloon(dialogue, "quest_Finishable")
 		skullQuest.QUEST_STATUS.COMPLETED:
-			chitchat();
-
-func chitchat():
-	print("sup?")
+			DialogueManager.show_dialogue_balloon(dialogue, "quest_Complete")

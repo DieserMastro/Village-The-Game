@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://btny6nj1irsku"
+path="res://.godot/imported/zestyDialogue.dialogue-4ebf7df334ec7cf4bc26b9b70ab7f1b3.tres"
+
+[deps]
+
+source_file="res://Assets/Scenes/NPCs/Dialogues/zestyDialogue.dialogue"
+dest_files=["res://.godot/imported/zestyDialogue.dialogue-4ebf7df334ec7cf4bc26b9b70ab7f1b3.tres"]
+
+[params]
+
+defaults=true

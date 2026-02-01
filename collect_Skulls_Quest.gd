@@ -5,7 +5,6 @@ extends Quest
 @export var skulls: Array[Interactable];
 var skullsFound: int = 0;
 
-
 signal triggerSkullFound;
 
 func _ready() -> void:
@@ -24,7 +23,9 @@ func acceptQuest():
 	for skull in skulls:
 		skull.collider.set_disabled(false);
 		
-
 func triggerQuest():
 	if currentStatus == QUEST_STATUS.AVAILABLE:
 		setQuestStatus(QUEST_STATUS.ONGOING);
+
+func getSkullsFound() -> int:
+	return skullsFound;

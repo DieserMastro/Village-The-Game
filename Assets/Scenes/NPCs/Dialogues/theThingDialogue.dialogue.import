@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://drq27fnb65e07"
+path="res://.godot/imported/theThingDialogue.dialogue-32d8af0717b273f04770ce00db9b0b62.tres"
+
+[deps]
+
+source_file="res://Assets/Scenes/NPCs/Dialogues/theThingDialogue.dialogue"
+dest_files=["res://.godot/imported/theThingDialogue.dialogue-32d8af0717b273f04770ce00db9b0b62.tres"]
+
+[params]
+
+defaults=true

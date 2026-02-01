@@ -2,8 +2,8 @@
 Skull: What the-
 Skull: How did you get here?
 Skull: [speed=0.2]...
-
 => give_Quest
+
 ~ give_Quest
 Skull: Ah, so be it.
 Skull: No harm in that, eh?
@@ -12,3 +12,16 @@ Skull: My siblings got lost again. Can you find them for me?
 Skull: I got five of those bones for brains.
 => END
 
+~ quest_Ongoing
+%1 Skull: How'sit looking?
+%1 Skull: Did you find them yet?
+=> END
+
+~ quest_Finishable 
+Skull: Ayyy thanks for the free, [wait=0.5][wave]bone-breaking[/wave], labour.
+Skull: Don't worry, I won't snitch.
+=> END
+
+~ quest_Complete
+Skull: 'Sup chief?
+=> END

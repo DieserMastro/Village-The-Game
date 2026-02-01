@@ -19,14 +19,18 @@ var settingsScreenBool: bool = false;
 var fullscreenBool: bool = true;
 var isLoading: bool;
 var gameOverlay: Control = null;
-var questManager: Node = null;
+##var questManager: Node = null;
 var load_progress = [];
 var load_Status: int = 0;
 
 var fadeoutOn: bool = false;
-@export var fadeoutValue: float = 0.05;
+var fadeinOn: bool = false;
+@export var fadeoutLength: float = 3;
+@export var startingVolume: float = -20;
+var activeVolume: float;
 
 ##Signals
+signal lightBurried
 signal fadeoutMusic
 signal loadingDone
 signal settingsTrigger
@@ -34,6 +38,7 @@ signal resolutionChange
 signal fullscreenTrigger
 signal interactionTrigger
 signal interactionAvailable
+signal ostOver
 
 ##Game Elements
 
@@ -53,9 +58,10 @@ func _process(delta: float) -> void:
 			loadingDone.emit();
 			
 	if fadeoutOn:
-		print("Fading out, current volume_db: ", audioStream.volume_db)
-		fadeout(fadeoutValue * delta);
+		fadeout(delta, fadeoutLength);
 		
+	elif fadeinOn:
+		fadeinMusic(delta, fadeoutLength, activeVolume)
 
 func _setup():
 	
@@ -66,6 +72,7 @@ func _setup():
 	audioStream.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(audioStream)
 	audioStream.play()
+	activeVolume = db_to_linear(startingVolume); ## dont want activeVolume in db
 	print("Audio started in setup, playing: ", audioStream.playing)
 	print("Audio stream: ", audioStream.stream)
 	print("Initial volume_db: ", audioStream.volume_db)
@@ -89,6 +96,8 @@ func _setup():
 	interactionAvailable.connect(_on_interaction_available);
 	interactionTrigger.connect(_on_interaction_trigger);
 	fadeoutMusic.connect(_on_fadeout_music);
+	lightBurried.connect(_on_light_burried);
+	ostOver.connect(_on_ost_over);
 
 func _on_settings_trigger():
 	if !settingsScreenBool:
@@ -199,18 +208,31 @@ func showAvailableInteraction(args: String):
 		gameOverlay.show()
 
 
-func fadeout(value: float):
-	audioStream.volume_db = linear_to_db(max(db_to_linear(audioStream.volume_db) - value, 0.0001))
-	if audioStream.volume_db <= -79 or audioStream.volume_linear <= 0.001: 
+func fadeout(delta: float, seconds: float):
+	var currentVolume: float = db_to_linear(audioStream.volume_db);
+	audioStream.volume_db = linear_to_db(currentVolume - (currentVolume * delta/seconds));
+	if audioStream.volume_db <= -79.0: 
 		fadeoutOn = false
-		audioStream.stream_paused = true # Actually stop playback
-		print("Audio stopped")
+		audioStream.stream_paused = true
 
+
+func fadeinMusic(delta: float, seconds: float, volume: float):
+	if audioStream.stream_paused:
+		audioStream.stream_paused = false;
+	var currentVolume = db_to_linear(audioStream.volume_db);
+	audioStream.volume_db = linear_to_db(currentVolume + (volume * delta/seconds));
+	
+	if audioStream.volume_db >= linear_to_db(volume):
+		fadeinOn = false;
+	
+	
 func _on_fadeout_music() -> void:
 	if fadeoutOn:
 		return
-	print("fadeout Triggered")
-	print("audioStream exists: ", audioStream != null)
-	print("audioStream playing: ", audioStream.playing if audioStream else "null")
-	audioStream.play()
 	fadeoutOn = true
+
+func _on_light_burried():
+	fadeinOn = true;
+
+func _on_ost_over():
+	audioStream.play(0);
