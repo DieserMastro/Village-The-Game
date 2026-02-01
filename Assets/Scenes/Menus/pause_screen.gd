@@ -25,8 +25,9 @@ func _on_mute_button_toggled(toggled_on: bool) -> void:
 func _on_option_button_item_selected(index: int) -> void:
 	var res: Vector2i;
 	match index:
-		0: res = Vector2i(1920,1080);
-		1: res = Vector2i(1280, 800);
+		0: res = Vector2i(2256, 1504); ##My laptop screen res
+		1: res = Vector2i(1920,1080);
+		2: res = Vector2i(1280, 800);
 	gm.resolutionChange.emit(res);
 	
 func _on_back_button_pressed() -> void:

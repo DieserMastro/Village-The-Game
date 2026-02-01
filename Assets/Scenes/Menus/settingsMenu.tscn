@@ -88,11 +88,13 @@ layout_mode = 0
 offset_top = 48.0
 offset_right = 500.0
 offset_bottom = 79.0
-item_count = 2
-popup/item_0/text = "1920x1080"
+item_count = 3
+popup/item_0/text = "2256x1504"
 popup/item_0/id = 0
-popup/item_1/text = "1280x800"
+popup/item_1/text = "1920x1080"
 popup/item_1/id = 1
+popup/item_2/text = "1280x800"
+popup/item_2/id = 2
 
 [node name="FullscreenToggle" type="CheckBox" parent="BoxContainer"]
 layout_mode = 2
